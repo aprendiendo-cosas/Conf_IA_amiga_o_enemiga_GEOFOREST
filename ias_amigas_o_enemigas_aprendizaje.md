@@ -15,7 +15,20 @@ En esta sección introductoria describo cómo se ha generado tanto el contenido 
 Para generar lo que puedes leer a continuación se han dado los siguientes pasos:
 
 1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, aquí tienes un documento con el hilo argumental inicial. 
-2. 
+2. Después pasé el documento anterior a dos IAs para que identificaran incoherencias y para que aportaran bibliografía sobre las afirmaciones realizadas en el texto. El *prompt* que usé es este: 
+
+> Tengo que preparar una conferencia sobre el modo en el que las IAs pueden usarse para promover el aprendizaje profundo en estudiantes universitarios.
+>
+> La charla se llama "Las IAs generativas para los estudiantes, ¿aliadas o enemigas?
+>
+> El archivo markdown adjunto contiene una propuesta de estructura de dichoa charla.
+>
+> Quiero que la trabajemos juntos. En primer lugar quiero que evalues la coherencia de los mensajes que se plantean en el texto. DEvuélveme el mismo texto que te envío pero añade comentarios entre corchetes cuando identifiques evidencias sólidas que contradigan o maticen lo que yo he escrito. Añade también referencias bibliográficas entre paréntesis para las afirmaciones para las que encuentres evidencias científicas publicadas.
+
+​	En este documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
+
+3. El siguiente paso implicó que concilié en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. Aquí se puede ver el hilo argumental "final".
+4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. Aquí está disponible la presentación en formato Powerpoint. 
 
 
 
