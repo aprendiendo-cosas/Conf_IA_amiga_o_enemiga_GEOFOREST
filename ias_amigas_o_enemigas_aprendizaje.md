@@ -1,6 +1,15 @@
 # IAs generativas y aprendizaje universitario: versión científica de la conferencia
 
-8 oct 2026 · @Curro
+> + **_Versión_**: 8 de octubre de 2026
+> + **_Nombre del evento_**: Inauguración del curso 26-27 del máster GEOFOREST (UCO)
+> + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
+> + **Duración**: 35'
+
+![portada](https://github.com/aprendiendo-cosas/Conf_ingenieria_regenerativa_UPM/raw/2025-2026/imagenes/portada.png)
+
+
+
+
 
 
 
@@ -8,13 +17,13 @@
 
 ## 1. Introducción: ¿Qué contiene este documento y cómo se ha generado?
 
-El texto que se muestra a continuación procede de una charla que impartí el día 8 de octubre de 2026 en la jornada inaugural de la décima promoción del máster GEOFOREST (Geomática ...) de la Universidad de Córdoba. La charla se tituló "Las IAs generativas para los estudiantes, ¿aliadas o enemigas del aprendizaje?". Duró unos 30 minutos (me alargué más de lo que me pidieron. Lo siento)
+El texto que se muestra a continuación procede de una charla que impartí el día 8 de octubre de 2026 en la jornada inaugural de la décima promoción del máster GEOFOREST (Máster universitario en Geomática, Teledetección y modelos espaciales aplicados a la gestión forestal) de la Universidad de Córdoba. La charla se tituló "Las IAs generativas para los estudiantes, ¿aliadas o enemigas del aprendizaje?". Duró unos 30 minutos (me alargué más de lo que me pidieron. Lo siento)
 
 En esta sección introductoria describo cómo se ha generado tanto el contenido de la charla como el texto que se muestra a continuación. Creo que en una época en la que los textos y las ideas pueden ser generadas por una IA, es importante ser transparente. 
 
 Para generar lo que puedes leer a continuación se han dado los siguientes pasos:
 
-1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, aquí tienes un documento con el hilo argumental inicial. 
+1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/1_hilo_argumental_inicial.md) tienes un documento con el hilo argumental inicial. 
 2. Después pasé el documento anterior a dos IAs para que identificaran incoherencias y para que aportaran bibliografía sobre las afirmaciones realizadas en el texto. El *prompt* que usé es este: 
 
 > Tengo que preparar una conferencia sobre el modo en el que las IAs pueden usarse para promover el aprendizaje profundo en estudiantes universitarios.
@@ -25,34 +34,45 @@ Para generar lo que puedes leer a continuación se han dado los siguientes pasos
 >
 > Quiero que la trabajemos juntos. En primer lugar quiero que evalues la coherencia de los mensajes que se plantean en el texto. DEvuélveme el mismo texto que te envío pero añade comentarios entre corchetes cuando identifiques evidencias sólidas que contradigan o maticen lo que yo he escrito. Añade también referencias bibliográficas entre paréntesis para las afirmaciones para las que encuentres evidencias científicas publicadas.
 
-​	En este documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
+​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
 
-3. El siguiente paso implicó que concilié en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. Aquí se puede ver el hilo argumental "final".
-4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. Aquí está disponible la presentación en formato Powerpoint. 
+3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/3_hilo_argumental_conciliado_IAs_fjbonet.md)) se puede ver el hilo argumental "final".
+4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. [Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/heads/main/presentacion_IAs_geoforest.pptx) está disponible la presentación en formato Powerpoint. 
+5. El día de la charla puse el móvil a grabar y se generó un audio. Use Gemini para transcribirlo literalmente. Me da un poco de pudor compartir tanto el audio como la transcripción, así que no lo haré.
+6. Después pasé el audio transcrito a Claude y le pedí lo siguiente:
+
+> Ya he impartido la charla. Te adjunto un documentto de markdown que recoge la transcripción literal del audio de dicha charla. También te adjunto la presentación de diapositivas que usé para guiar la charla.
+>
+> Quiero que, usando el contenido de la presentación y los comentarios que hay en el texto, lo rehagas y generes otro con las siguientes características:
+>
+> - Debe de estar escrito con un lenguaje científico.
+> - Elimina las bromas y comentarios personales hechos por el profesor para capturar la atención de la audiencia.
+> - Añade comentarios en negrita después de las afirmaciones que no tengan respaldo científico o que sean directamente incorrectas.
+> - Mantén el hilo argumental de la exposición hecha por el profesor.
+
+​	El resultado de este *prompt* es lo que puedes leer a continuación. La IA ha añadido comentarios que se 	muestran en negrita. Yo también he añadido algún comentario que se muestra en cursiva. 
 
 
 
-
-
-
-
-
-
-## y planteamiento del problema
-
-Este documento reelabora en registro científico la conferencia «Las IAs generativas para los estudiantes, ¿aliadas o enemigas del aprendizaje?», impartida a estudiantes de máster. Las afirmaciones sin respaldo empírico suficiente, o contradichas por la literatura, se señalan con un comentario en negrita inmediatamente después.
+## 1. Planteamiento del problema
 
 La pregunta que da título a la exposición no admite, por el momento, una respuesta concluyente. La inteligencia artificial (IA) generativa es una tecnología reciente y disruptiva, cuyos efectos sobre el aprendizaje apenas han comenzado a estudiarse de forma sistemática. Las valoraciones sociales oscilan entre la expectativa de un deterioro profundo de las capacidades humanas y la de una liberación generalizada de trabajo. **[Comentario: la falta de respuesta concluyente es coherente con el estado de la evidencia. Los metaanálisis disponibles muestran efectos positivos sobre el rendimiento académico, pero se basan mayoritariamente en estudios de corta duración, con alta heterogeneidad y calidad metodológica desigual, y rara vez miden la retención o la transferencia sin la IA disponible (**[**Wang & Fan, 2025**](https://scholar.google.com/scholar?q="The+effect+of+ChatGPT+on+students'+learning+performance%2C+learning+perception%2C+and+higher-order+thinking")**).]**
 
-El objetivo no es ofrecer una respuesta definitiva, sino proponer un marco de reflexión. Ese marco se construye a partir de la experiencia docente del autor durante los primeros años de uso de estas herramientas (aproximadamente desde la publicación de ChatGPT, en noviembre de 2022) y de la literatura sobre cómo aprenden los seres humanos. La exposición concluye con una propuesta provisional de criterios de uso.
+El objetivo de esta charla no es ofrecer una respuesta definitiva, sino proponer un marco de reflexión. Ese marco se construye a partir de la experiencia docente del autor durante los primeros años de uso de estas herramientas (aproximadamente desde la publicación de ChatGPT, en noviembre de 2022) y de la literatura sobre cómo aprenden los seres humanos. La exposición concluye con una propuesta provisional de criterios de uso.
+
+
 
 ## 2. Contexto: actitudes individuales, respuesta institucional y efectos de la prohibición
+
+
 
 ### 2.1. Actitudes individuales
 
 Las actitudes individuales ante la IA generativa pueden agruparse en tres perfiles: los adoptantes tempranos, que la usan de forma intensiva; quienes la rechazan por motivos éticos o ambientales; y un grupo intermedio que la incorpora con cautela. En la consulta informal realizada al público, predominaron los adoptantes y los cautelosos, y ningún asistente se identificó con el rechazo. El autor declara una posición mixta: uso intensivo acompañado de reservas éticas. Estas actitudes dependen de la experiencia y la disposición de cada persona, y pueden coexistir de forma contradictoria en un mismo individuo.
 
 Otras tecnologías hoy plenamente asumidas en las ciencias ambientales y forestales, como los sistemas de información geográfica (SIG) o la teledetección, probablemente suscitaron en su origen una diversidad de actitudes comparable. Hoy forman parte de la práctica cotidiana y su efecto sobre las capacidades cognitivas no se cuestiona. **[Comentario: la analogía es plausible, pero el paralelismo no es completo. Los SIG generaron en los años noventa un debate académico sostenido sobre sus implicaciones epistemológicas y sociales (**[**Pickles, 1995**](https://scholar.google.com/scholar?q="Ground+truth%3A+The+social+implications+of+geographic+information+systems")**), aunque no centrado en la pérdida de capacidades cognitivas. Un precedente más próximo es el de la calculadora, cuyo uso no deterioró las destrezas básicas según los metaanálisis (**[**Ellington, 2003**](https://scholar.google.com/scholar?q="A+meta-analysis+of+the+effects+of+calculators+on+students'+achievement+and+attitude+levels")**). A diferencia de ambas, la IA generativa puede ejecutar directamente tareas de comprensión, síntesis y redacción.]**
+
+
 
 ### 2.2. Respuesta institucional
 
@@ -73,6 +93,8 @@ Desde una perspectiva sistémica, las intervenciones sobre sistemas complejos su
 Como alternativa a la prohibición, el autor optó desde el inicio por explorar con sus estudiantes el uso de la IA como herramienta de aprendizaje. Los primeros intentos tuvieron efectos negativos no previstos; los ajustes posteriores han permitido delimitar un espacio de uso más seguro. Una limitación de este enfoque es que cada cohorte experimenta solo los errores de su curso, y no las correcciones introducidas después.
 
 El análisis de esos errores se presenta a continuación. Se parte de la premisa de que el aprendizaje depende menos de cometer errores que de cómo se afrontan una vez cometidos. **[Comentario: respaldado, con matices. Los errores seguidos de retroalimentación correctiva favorecen el aprendizaje (**[**Metcalfe, 2017**](https://doi.org/10.1146/annurev-psych-010416-044022)**), y el entrenamiento que incorpora explícitamente la gestión de errores mejora la transferencia (**[**Keith & Frese, 2008**](https://doi.org/10.1037/0021-9010.93.1.59)**). La evidencia se refiere sobre todo al aprendizaje individual; trasladarla a la mejora de una práctica docente es una extrapolación razonable, pero no directa.]**
+
+
 
 ## 3. Experiencia docente: tres supuestos erróneos
 
@@ -166,7 +188,7 @@ Como respuesta, se propone un sistema de esclusas que limita el uso de la IA en 
 
 ## Referencias
 
-Las referencias se han recopilado sin acceso a búsqueda bibliográfica; conviene verificar los datos antes de citarlas. Los enlaces a doi.org y arXiv son directos; los de Google Scholar buscan el título exacto.
+Las referencias se han recopilado sin acceso a búsqueda bibliográfica; conviene verificar los datos antes de citarlas. Los enlaces a doi.org y arXiv son directos; los de Google Scholar buscan el título exacto. *No he leído toda esta bibliografía para preparar la charla. Solo los resúmenes de algunas. Ya tengo tarea para los próximos meses ...*
 
 - Arjona, D. (2026). El claustro y la nave espacial. *El Arjonauta* (Substack). [Enlace](https://elarjonauta.substack.com/p/el-claustro-y-la-nave-espacial-universidad-ia)
 - Ausubel, D. P. (1968). *Educational psychology: A cognitive view*. Holt, Rinehart & Winston. [Enlace](https://scholar.google.com/scholar?q="Educational+psychology%3A+A+cognitive+view")
