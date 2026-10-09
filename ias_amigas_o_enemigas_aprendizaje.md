@@ -234,3 +234,19 @@ Las referencias se han recopilado sin acceso a búsqueda bibliográfica; convien
 - Wang, J. y Fan, W. (2025). The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: Insights from a meta-analysis. *Humanities and Social Sciences Communications, 12*, 621. [Enlace](https://scholar.google.com/scholar?q="The+effect+of+ChatGPT+on+students'+learning+performance%2C+learning+perception%2C+and+higher-order+thinking")
 - Weber-Wulff, D. et al. (2023). Testing of detection tools for AI-generated text. *International Journal for Educational Integrity, 19*, 26. [Enlace](https://doi.org/10.1007/s40979-023-00146-z)
 - Wood, D., Bruner, J. S. y Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry, 17*(2), 89–100. [Enlace](https://doi.org/10.1111/j.1469-7610.1976.tb00381.x)
+
+
+
+
+
+
+****
+
+[Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/archive/refs/tags/2026_2027.zip) puedes descargar un archivo .zip que contiene este texto en formato html y todo el material que incluye.
+
+****
+
+<p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> 
+
+<p>Esta licencia no aplica a enlaces a artículos, libros o imágenes no originales. Estos productos tienen su licencia correspondiente.</p>
+
