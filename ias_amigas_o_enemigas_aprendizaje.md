@@ -9,7 +9,7 @@
 
 
 
-
+---
 
 [TOC]
 
@@ -34,7 +34,7 @@ Para generar lo que puedes leer a continuación se han dado los siguientes pasos
 
 ​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
 
-3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/3_hilo_argumental_conciliado_IAs_fjbonet.md)) se puede ver el hilo argumental "final".
+3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/3_hilo_argumental_conciliado_IAs_fjbonet.md) se puede ver el hilo argumental "final".
 4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. [Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/heads/main/presentacion_IAs_geoforest.pptx) está disponible la presentación en formato Powerpoint. 
 5. El día de la charla puse el móvil a grabar y se generó un audio. Use Gemini para transcribirlo literalmente. Me da un poco de pudor compartir tanto el audio como la transcripción, así que no lo haré.
 6. Después pasé el audio transcrito a Claude y le pedí lo siguiente:
@@ -60,6 +60,10 @@ El objetivo de esta charla no es ofrecer una respuesta definitiva, sino proponer
 
 
 
+![diapo1](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_1_portada.png)
+
+
+
 ## 2. Contexto: actitudes individuales, respuesta institucional y efectos de la prohibición
 
 
@@ -76,15 +80,25 @@ Otras tecnologías hoy plenamente asumidas en las ciencias ambientales y foresta
 
 Las universidades, como instituciones, no han ofrecido hasta ahora una respuesta operativa al uso de la IA en la docencia. Existen marcos normativos y orientaciones de rango supranacional, como el Reglamento europeo de IA y la guía de la UNESCO, pero no están concebidos para la escala del aula ni de la asignatura. **[Comentario: conviene precisar la naturaleza de estos instrumentos. El documento de la UNESCO es una guía de recomendaciones, no un reglamento (**[**UNESCO, 2023**](https://scholar.google.com/scholar?q="Guidance+for+generative+AI+in+education+and+research")**). El Reglamento europeo regula sobre todo la seguridad y los riesgos de los sistemas de IA; no tiene por objeto proteger la capacidad cognitiva de los usuarios, aunque su artículo 4 exige garantizar la alfabetización en IA del personal de las organizaciones que la utilizan (**[**Reglamento (UE) 2024/1689**](http://data.europa.eu/eli/reg/2024/1689/oj)**).]**
 
+
+
+![diapo3](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_3_tsunami.png)
+
+
+
 ### 2.3. Consecuencia de primer orden: la prohibición
 
 La combinación de una tecnología que no ha sido demandada por la comunidad educativa, unas actitudes individuales heterogéneas y un marco normativo genérico conduce a que una parte relevante del profesorado opte por prohibir o restringir el uso de la IA. Esta respuesta es comprensible, dado que el profesorado carece en general de formación y de respaldo institucional para gestionar su uso. **[Comentario: no se aporta evidencia sobre la proporción de profesorado que adopta políticas prohibitivas; la afirmación debería presentarse como una observación del autor.]**
 
 La prohibición contrasta con la amplitud del uso. En la exposición se afirmó que en torno al 90 % de la población de un país como España usa la IA a diario. **[Comentario: la cifra es incorrecta para la población general. Las encuestas sitúan el uso diario en la población general muy por debajo de ese valor. La cifra de en torno al 90 % corresponde al uso (no necesariamente diario) por parte de estudiantes universitarios: un 92 % en el Reino Unido en 2025 (**[**Freeman, 2025**](https://www.google.com/search?q=HEPI+"Student+Generative+AI+Survey+2025")**). Para el argumento de la charla, este último dato es además el más pertinente.]**
 
+
+
 ### 2.4. Consecuencia de segundo orden: el uso encubierto
 
 Desde una perspectiva sistémica, las intervenciones sobre sistemas complejos suelen producir consecuencias no previstas. En este caso, la prohibición tendería a desplazar el uso de la IA hacia prácticas encubiertas, dada la disponibilidad de una herramienta de gran potencia. El estudiante percibe un problema que la institución no aborda, y el profesor carece de medios para identificar los trabajos elaborados con IA. **[Comentario: la hipótesis del desplazamiento hacia el uso encubierto es plausible, pero no se aporta evidencia empírica que la sustente. En cambio, la dificultad para identificar los textos generados por IA sí está bien documentada: ni el profesorado novel ni el experimentado los distingue de forma fiable (**[**Fleckenstein et al., 2024**](https://doi.org/10.1016/j.caeai.2024.100209)**), y los detectores automáticos tampoco son fiables (**[**Weber-Wulff et al., 2023**](https://doi.org/10.1007/s40979-023-00146-z)**).]**
+
+
 
 ### 2.5. Una alternativa: aprender a usar la IA en el aula
 
@@ -94,9 +108,13 @@ El análisis de esos errores se presenta a continuación. Se parte de la premisa
 
 
 
-## 3. Experiencia docente: tres supuestos erróneos
+![diapo6](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_6_meme_correr_desierto.png)
 
-### 3.1. Primer supuesto: lo que es útil para el profesor lo es también para el estudiante
+
+
+## 3. Experiencia docente: tres errores cometidos
+
+### 3.1. Primer error: lo que es útil para el profesor lo es también para el estudiante
 
 Para el autor, la IA generativa ha transformado la forma de trabajar y, sobre todo, de aprender. Le permite iniciar con facilidad scripts de programación, preparar asignaturas nuevas y acceder con rapidez a información sobre campos que antes le resultaban poco accesibles. El autor considera este cambio de mayor alcance que la llegada de las enciclopedias digitales a finales de los años noventa.
 
@@ -108,6 +126,12 @@ La explicación propuesta se basa en la diferencia entre las estructuras de cono
 
 El mecanismo invocado es la descarga cognitiva (*cognitive offloading*): al disponer de un sistema externo de gran capacidad, el usuario delega en él procesos cognitivos superiores, como la comprensión profunda, la síntesis o el pensamiento crítico, de forma no deliberada. El uso prolongado de este apoyo atrofiaría esas capacidades, del mismo modo que una muleta usada indefinidamente debilita la musculatura. **[Comentario: el concepto está bien establecido, pero se presenta de forma incompleta. La descarga cognitiva es con frecuencia una decisión estratégica, no necesariamente inconsciente, y puede ser beneficiosa, porque libera recursos para otras tareas; su coste principal documentado es una peor memoria de lo delegado (**[**Risko & Gilbert, 2016**](https://doi.org/10.1016/j.tics.2016.07.002)**). La asociación entre uso frecuente de IA, descarga cognitiva y menor pensamiento crítico se ha observado en estudios correlacionales que no prueban causalidad (**[**Gerlich, 2025**](https://doi.org/10.3390/soc15010006)**). La pérdida de destrezas por delegación sí se ha documentado en profesionales: endoscopistas habituados al apoyo de la IA detectaron menos adenomas al trabajar sin ella (**[**Budzyń et al., 2025**](https://scholar.google.com/scholar?q="Endoscopist+deskilling+risk+after+exposure+to+artificial+intelligence+in+colonoscopy")**).]**
 
+
+
+![diapo11](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_11_aprendiz_experto.png)
+
+
+
 ### 3.2. Segundo supuesto: un buen resultado implica aprendizaje
 
 El segundo supuesto erróneo, extendido en el conjunto del sistema educativo, consiste en inferir que un producto de calidad (un informe, un artículo, una gráfica) elaborado con IA refleja un aprendizaje profundo, entendido como aquel que se mantiene en el tiempo más allá de la evaluación. **[Comentario: la definición es parcial. En la literatura, el aprendizaje profundo (\*deep approach\*) se asocia sobre todo a la búsqueda de comprensión y significado, frente a la memorización reproductiva (\*surface approach\*) (**[**Marton & Säljö, 1976**](https://scholar.google.com/scholar?q="On+qualitative+differences+in+learning"+Marton+Säljö)**); la retención a largo plazo es una consecuencia, no su definición.]**
@@ -118,21 +142,33 @@ Lo que produce aprendizaje es el proceso, no solo la calidad del resultado. Ello
 
 Cuando la IA se orienta al proceso, los resultados mejoran. **[Comentario: respaldado, aunque con resultados de distinta magnitud. En el estudio de Bastani et al., una versión de GPT-4 diseñada como tutor, que no ofrecía las respuestas directamente, eliminó el efecto negativo sobre el examen, aunque no lo mejoró significativamente respecto al control (**[**Bastani et al., 2025**](https://doi.org/10.1073/pnas.2422633122)**). En un ensayo controlado con estudiantes universitarios de Física, un tutor de IA diseñado según principios pedagógicos produjo ganancias de aprendizaje superiores al doble que una clase de aprendizaje activo (**[**Kestin et al., 2025**](https://scholar.google.com/scholar?q="AI+tutoring+outperforms+in-class+active+learning")**). En ambos casos se trata de herramientas configuradas específicamente, no de asistentes de uso general.]**
 
+
+
+![diapo12](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_12_productismo.png)
+
+
+
 ### 3.3. Tercer supuesto: la IA es igualmente útil para cualquier tarea
 
 El tercer supuesto erróneo es considerar la IA como una herramienta polivalente que mejora el aprendizaje en todos los ámbitos. La experiencia del autor y la literatura indican que algunos usos lo favorecen y otros lo dificultan.
 
 Entre los usos que tienden a favorecer el aprendizaje se encuentran los siguientes:
 
-- **Programación.** La IA facilitaría y aceleraría el aprendizaje de cualquier lenguaje de programación. **[Comentario: la generalización es excesiva. El acceso a la IA no perjudicó el aprendizaje de principiantes en un estudio (**[**Kazemitabaar et al., 2023**](https://scholar.google.com/scholar?q="Studying+the+effect+of+AI+code+generators+on+supporting+novice+learners+in+introductory+programming")**), pero sus efectos dependen de las destrezas metacognitivas del estudiante (**[**Prather et al., 2024**](https://scholar.google.com/scholar?q="The+widening+gap%3A+The+benefits+and+harms+of+generative+AI+for+novice+programmers")**). No hay evidencia de una aceleración general para «cualquier lenguaje».]**
+- **Programación.** La IA puede facilitar el aprendizaje de lenguajes de programación si se usa con criterios adecuados. **[Comentario: la generalización es excesiva. El acceso a la IA no perjudicó el aprendizaje de principiantes en un estudio (**[**Kazemitabaar et al., 2023**](https://scholar.google.com/scholar?q="Studying+the+effect+of+AI+code+generators+on+supporting+novice+learners+in+introductory+programming")**), pero sus efectos dependen de las destrezas metacognitivas del estudiante (**[**Prather et al., 2024**](https://scholar.google.com/scholar?q="The+widening+gap%3A+The+benefits+and+harms+of+generative+AI+for+novice+programmers")**). No hay evidencia de una aceleración general para «cualquier lenguaje».]**
 - **Búsqueda de información.** La búsqueda semántica aumenta la eficiencia en la localización de literatura científica, siempre que se empleen herramientas adecuadas. En la exposición se recomendaron Perplexity y Elicit y se desaconsejó ChatGPT. **[Comentario: los modelos de lenguaje sin acceso a fuentes inventan referencias con frecuencia: el 55 % de las citas de GPT-3.5 y el 18 % de las de GPT-4 eran inexistentes en un estudio (**[**Walters & Wilder, 2023**](https://doi.org/10.1038/s41598-023-41032-5)**). Sin embargo, no se dispone de evaluaciones independientes que respalden la superioridad de las herramientas recomendadas, y las versiones actuales de ChatGPT también incorporan búsqueda en fuentes. Cualquier herramienta requiere verificación sistemática de las referencias.]**
 - **Explicación de conceptos.** El diálogo de tipo socrático con la IA, basado en repreguntar, favorece la comprensión. **[Comentario: respaldado cuando la herramienta está diseñada para no dar respuestas directas (**[**Kestin et al., 2025**](https://scholar.google.com/scholar?q="AI+tutoring+outperforms+in-class+active+learning")**;** [**Bastani et al., 2025**](https://doi.org/10.1073/pnas.2422633122)**).]**
 
 Entre los usos que tienden a dificultar el aprendizaje se encuentran los siguientes:
 
-- **Redacción.** Delegar la escritura en la IA no sería adecuado ni siquiera para personas expertas, porque conduce a la pérdida de esa capacidad. **[Comentario: la afirmación referida a expertos no está respaldada de forma general. En términos de productividad, la IA mejora la rapidez y la calidad de la escritura profesional (**[**Noy & Zhang, 2023**](https://doi.org/10.1126/science.adh2586)**). La evidencia sobre efectos cognitivos de redactar con IA es aún preliminar: un estudio con electroencefalografía encontró menor conectividad cerebral y menor sensación de autoría al escribir con ChatGPT, pero es un preprint sin revisión por pares y con una muestra pequeña (**[**Kosmyna et al., 2025**](https://arxiv.org/abs/2506.08872)**).]**
+- **Redacción.** Delegar la escritura en la IA no sería adecuado, sobre todo para personas con poca experiencia en la escritura. **[Comentario: la afirmación referida a expertos no está respaldada de forma general. En términos de productividad, la IA mejora la rapidez y la calidad de la escritura profesional (**[**Noy & Zhang, 2023**](https://doi.org/10.1126/science.adh2586)**). La evidencia sobre efectos cognitivos de redactar con IA es aún preliminar: un estudio con electroencefalografía encontró menor conectividad cerebral y menor sensación de autoría al escribir con ChatGPT, pero es un preprint sin revisión por pares y con una muestra pequeña (**[**Kosmyna et al., 2025**](https://arxiv.org/abs/2506.08872)**).]**
 - **Resumen.** Resumir es una tarea cognitivamente exigente que no debería delegarse. **[Comentario: parcialmente respaldado. Resumir requiere procesamiento activo, pero su eficacia como técnica de estudio es limitada si el estudiante no ha sido entrenado en ella (**[**Dunlosky et al., 2013**](https://doi.org/10.1177/1529100612453266)**). Además, los resúmenes de artículos científicos generados por modelos de lenguaje tienden a generalizar en exceso las conclusiones (**[**Peters & Chin-Yee, 2025**](https://doi.org/10.1098/rsos.241776)**).]**
-- **Cuestionamiento.** Contrastar la información recibida con el conocimiento propio y buscar puntos de fricción no debería delegarse en la IA; en la exposición se afirmó que este uso reduce el aprendizaje «independientemente de lo bien que usemos la IA». **[Comentario: la afirmación es demasiado absoluta y contradice la propuesta de la sección 5.1, donde la IA se usa después del esfuerzo como «contraste, espejo, adversario, corrector». Lo que la evidencia desaconseja es delegar el juicio crítico, no usar la IA como interlocutor que lo ejercite; los tutores diseñados para cuestionar al estudiante obtienen buenos resultados (**[**Kestin et al., 2025**](https://scholar.google.com/scholar?q="AI+tutoring+outperforms+in-class+active+learning")**).]**
+- **Cuestionamiento.** Delegar el juicio crítico no es recomendable independientemente de lo bien que usemos la IA. **[Comentario: lo que sí es útil es usar la IA como interlocutor que lo ejercite; los tutores diseñados para cuestionar al estudiante obtienen buenos resultados (**[**Kestin et al., 2025**](https://scholar.google.com/scholar?q="AI+tutoring+outperforms+in-class+active+learning")**).]**
+
+
+
+![diapo13](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_13_multiuso.png)
+
+
 
 ## 4. Fundamentos cognitivos del aprendizaje profundo
 
@@ -144,7 +180,7 @@ El aprendizaje requiere esfuerzo. Para que los conceptos se consoliden deben ser
 
 ### 4.2. Conexión con el conocimiento previo
 
-El conocimiento nuevo no se incorpora en el vacío, sino en relación con lo que ya se sabe. Ello genera una jerarquía en el aprendizaje: la selvicultura requiere conocimientos de ecología; la ecología, de botánica; y la botánica, de edafología. Del mismo modo, la física cuántica sería inaccesible sin la física newtoniana. **[Comentario: el papel del conocimiento previo es un principio clásico (**[**Ausubel, 1968**](https://scholar.google.com/scholar?q="Educational+psychology%3A+A+cognitive+view")**). No obstante, un metaanálisis amplio muestra que el conocimiento previo predice con fuerza el conocimiento final, pero su relación con la ganancia de aprendizaje es más débil e inconsistente de lo que se suele suponer (**[**Simonsmeier et al., 2022**](https://doi.org/10.1080/00461520.2021.1939700)**). La idea de una jerarquía estricta entre disciplinas es una simplificación.]**
+El conocimiento nuevo no se incorpora en el vacío, sino en relación con lo que ya se sabe. Ello genera una jerarquía en el aprendizaje: la selvicultura requiere conocimientos de ecología; la ecología, de botánica; y la botánica, de edafología. Del mismo modo, la física cuántica sería inaccesible sin la física newtoniana. **[Comentario: el papel del conocimiento previo es un principio clásico (**[**Ausubel, 1968**](https://scholar.google.com/scholar?q="Educational+psychology%3A+A+cognitive+view")**). No obstante, un metaanálisis amplio muestra que el conocimiento previo predice con fuerza el conocimiento final, pero su relación con la ganancia de aprendizaje es más débil e inconsistente de lo que se suele suponer (**[**Simonsmeier et al., 2022**](https://doi.org/10.1080/00461520.2021.1939700)**)]**
 
 ### 4.3. Andamiaje
 
@@ -153,6 +189,14 @@ El aprendizaje requiere apoyos externos provisionales, análogos a los andamios 
 ### 4.4. Implicación para la IA
 
 La IA generativa puede vulnerar estas tres condiciones. Salvo que se le indique expresamente, no genera fricción, no tiene en cuenta la estructura de conocimientos del usuario y no actúa como un andamio que se retira: proporciona de una vez todo el conocimiento solicitado. Por tanto, un uso favorable al aprendizaje debe adaptarse a estas condiciones. **[Comentario: coherente con la evidencia. El mismo modelo de lenguaje produce efectos opuestos sobre el aprendizaje según se configure para dar respuestas o para guiar al estudiante (**[**Bastani et al., 2025**](https://doi.org/10.1073/pnas.2422633122)**).]**
+
+
+
+![diapo14](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_14_aprendizaje_profundo.png)
+
+
+
+
 
 ## 5. Propuesta de criterios de uso: las esclusas
 
@@ -167,7 +211,7 @@ Según Arjona, «la IA puede llegar antes, durante o después del esfuerzo. Si l
 Se proponen tres usos desaconsejados:
 
 1. **Creación de contenido cuando sustituye el objeto de aprendizaje.** Si una actividad persigue que el estudiante aprenda a construir una presentación con un hilo argumental, delegarla en la IA anula su finalidad. Si el objeto de aprendizaje es otro (por ejemplo, analizar las diferencias entre R y Python), el formato puede delegarse sin coste para el aprendizaje. **[Comentario: coherente con el efecto de generación (**[**Slamecka & Graf, 1978**](https://doi.org/10.1037/0278-7393.4.6.592)**) y con la distinción entre rendimiento y aprendizaje (**[**Soderstrom & Bjork, 2015**](https://doi.org/10.1177/1745691615569000)**). El criterio de identificar qué parte de la tarea constituye el objeto de aprendizaje es pertinente.]**
-2. **Cuestiones personales.** Se desaconseja usar la IA para decisiones personales o como sustituto de apoyo psicológico. En la exposición se afirmó que estos sistemas «están entrenados para ganar dinero, no para ayudarnos» y que tienen una «personalidad psicopática». **[Comentario: estas dos afirmaciones carecen de base científica y la segunda es incorrecta: atribuir una personalidad clínica a un modelo de lenguaje no tiene fundamento. Sí está documentada la complacencia (\*sycophancy\*): la tendencia de estos modelos a dar la razón al usuario incluso cuando se equivoca (**[**Sharma et al., 2023**](https://scholar.google.com/scholar?q="Towards+understanding+sycophancy+in+language+models")**). La evidencia sobre el apoyo psicológico es mixta: un ensayo controlado con un chatbot terapéutico diseñado para ello mostró reducción de síntomas de depresión y ansiedad (**[**Heinz et al., 2025**](https://scholar.google.com/scholar?q="Randomized+trial+of+a+generative+AI+chatbot+for+mental+health+treatment")**), mientras que el uso intensivo de chatbots generalistas se ha asociado con más soledad y dependencia emocional (**[**Fang et al., 2025**](https://scholar.google.com/scholar?q="How+AI+and+human+behaviors+shape+psychosocial+effects+of+chatbot+use")**). No hay evidencia de que pedir sugerencias de regalos perjudique el aprendizaje o el bienestar.]**
+2. **Cuestiones personales.** Se desaconseja usar la IA para decisiones personales o como sustituto de apoyo psicológico.  **[Comentario: estas dos afirmaciones carecen de base científica. Sí está documentada la complacencia: la tendencia de estos modelos a dar la razón al usuario incluso cuando se equivoca (**[**Sharma et al., 2023**](https://scholar.google.com/scholar?q="Towards+understanding+sycophancy+in+language+models")**). La evidencia sobre el apoyo psicológico es mixta: un ensayo controlado con un chatbot terapéutico diseñado para ello mostró reducción de síntomas de depresión y ansiedad (**[**Heinz et al., 2025**](https://scholar.google.com/scholar?q="Randomized+trial+of+a+generative+AI+chatbot+for+mental+health+treatment")**), mientras que el uso intensivo de chatbots generalistas se ha asociado con más soledad y dependencia emocional (**[**Fang et al., 2025**](https://scholar.google.com/scholar?q="How+AI+and+human+behaviors+shape+psychosocial+effects+of+chatbot+use")**)]**
 3. **Habilidades ya adquiridas.** El uso intensivo de la IA para tareas que el usuario ya domina, como la escritura, puede llevar a la pérdida de esas habilidades. **[Comentario: respaldado por la evidencia de pérdida de destrezas en profesionales expertos tras habituarse al apoyo de la IA (**[**Budzyń et al., 2025**](https://scholar.google.com/scholar?q="Endoscopist+deskilling+risk+after+exposure+to+artificial+intelligence+in+colonoscopy")**). Este resultado matiza la idea de la sección 3.1 de que la IA es un «superpoder» para el experto.]**
 
 ### 5.3. Esclusas sobre el tipo de tarea: usos recomendados
@@ -178,13 +222,17 @@ Se proponen tres usos recomendados:
 2. **Tareas simples**, como realizar cálculos o agregar datos en una hoja de cálculo. **[Comentario: los modelos de lenguaje pueden cometer errores aritméticos si no ejecutan código o no usan herramientas de cálculo integradas. El criterio debería incluir la verificación de los resultados.]**
 3. **Aprendizaje de destrezas nuevas pero próximas.** Este es el uso más valioso: aprender lo que no se sabe, pero que está al alcance a partir de los conocimientos previos. Por ejemplo, preparar una asignatura nueva en un campo afín es abordable con ayuda de la IA; una destreza muy alejada de la propia formación no lo es, porque genera frustración y escaso aprendizaje. **[Comentario: respaldado. El criterio corresponde a la zona de desarrollo próximo (**[**Vygotsky, 1978**](https://scholar.google.com/scholar?q="Mind+in+society%3A+The+development+of+higher+psychological+processes")**) y a las condiciones de eficacia del andamiaje (**[**van de Pol et al., 2010**](https://doi.org/10.1007/s10648-010-9127-6)**). Conviene señalar que el ejemplo procede de un profesor experto; para un estudiante, el riesgo descrito en la sección 3.1 sigue presente si la IA resuelve la tarea en lugar de guiarla.]**
 
+
+
 ## 6. Conclusiones
 
 La IA generativa no es en sí misma aliada ni enemiga del aprendizaje: su efecto depende de si su uso respeta las condiciones de fricción, conexión con el conocimiento previo y andamiaje que requiere el aprendizaje profundo. La experiencia docente analizada muestra tres supuestos erróneos: que lo útil para un experto lo es para un aprendiz, que un buen producto implica aprendizaje y que la IA es igualmente útil para cualquier tarea.
 
 Como respuesta, se propone un sistema de esclusas que limita el uso de la IA en función del momento del proceso de aprendizaje y del tipo de tarea. Estos criterios son provisionales: la evidencia disponible procede en gran parte de estudios de corta duración, de contextos distintos al universitario o de diseños correlacionales, y requiere confirmación mediante estudios longitudinales.
 
-## Referencias
+
+
+## 7. Referencias
 
 Las referencias se han recopilado sin acceso a búsqueda bibliográfica; conviene verificar los datos antes de citarlas. Los enlaces a doi.org y arXiv son directos; los de Google Scholar buscan el título exacto. *No he leído toda esta bibliografía para preparar la charla. Solo los resúmenes de algunas. Ya tengo tarea para los próximos meses ...*
 
