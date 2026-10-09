@@ -5,9 +5,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **Duración**: 35'
 
-![portada](https://github.com/aprendiendo-cosas/Conf_ingenieria_regenerativa_UPM/raw/2025-2026/imagenes/portada.png)
-
-
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/portada.png)
 
 
 
