@@ -1,0 +1,623 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+img:not([height]) { height: auto; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+svg sub, svg sup { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignObject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; position: relative; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
+
+<title>ias_amigas_o_enemigas_aprendizaje</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='ias-generativas-y-aprendizaje-universitario-versión-científica-de-la-conferencia'><span>IAs generativas y aprendizaje universitario: versión científica de la conferencia</span></h1><blockquote><ul><li><p><strong><em><span>Versión</span></em></strong><span>: 8 de octubre de 2026</span></p></li><li><p><strong><em><span>Nombre del evento</span></em></strong><span>: Inauguración del curso 26-27 del máster GEOFOREST (UCO)</span></p></li><li><p><strong><em><span>Autor</span></em></strong><span>: Curro Bonet-García (fjbonet@uco.es)</span></p></li><li><p><strong><span>Duración</span></strong><span>: 35&#39;</span></p></li></ul></blockquote><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/portada.png" alt="portada"></p><hr /><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#ias-generativas-y-aprendizaje-universitario-versión-científica-de-la-conferencia">IAs generativas y aprendizaje universitario: versión científica de la conferencia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n16"><a class="md-toc-inner" href="#1-introducción-qué-contiene-este-documento-y-cómo-se-ha-generado">1. Introducción: ¿Qué contiene este documento y cómo se ha generado?</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n54"><a class="md-toc-inner" href="#1-planteamiento-del-problema">1. Planteamiento del problema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n60"><a class="md-toc-inner" href="#2-contexto-actitudes-individuales-respuesta-institucional-y-efectos-de-la-prohibición">2. Contexto: actitudes individuales, respuesta institucional y efectos de la prohibición</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n62"><a class="md-toc-inner" href="#21-actitudes-individuales">2.1. Actitudes individuales</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n66"><a class="md-toc-inner" href="#22-respuesta-institucional">2.2. Respuesta institucional</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n71"><a class="md-toc-inner" href="#23-consecuencia-de-primer-orden-la-prohibición">2.3. Consecuencia de primer orden: la prohibición</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n75"><a class="md-toc-inner" href="#24-consecuencia-de-segundo-orden-el-uso-encubierto">2.4. Consecuencia de segundo orden: el uso encubierto</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n78"><a class="md-toc-inner" href="#25-una-alternativa-aprender-a-usar-la-ia-en-el-aula">2.5. Una alternativa: aprender a usar la IA en el aula</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n84"><a class="md-toc-inner" href="#3-experiencia-docente-tres-errores-cometidos">3. Experiencia docente: tres errores cometidos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n85"><a class="md-toc-inner" href="#31-primer-error-lo-que-es-útil-para-el-profesor-lo-es-también-para-el-estudiante">3.1. Primer error: lo que es útil para el profesor lo es también para el estudiante</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n94"><a class="md-toc-inner" href="#32-segundo-supuesto-un-buen-resultado-implica-aprendizaje">3.2. Segundo supuesto: un buen resultado implica aprendizaje</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n102"><a class="md-toc-inner" href="#33-tercer-supuesto-la-ia-es-igualmente-útil-para-cualquier-tarea">3.3. Tercer supuesto: la IA es igualmente útil para cualquier tarea</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n123"><a class="md-toc-inner" href="#4-fundamentos-cognitivos-del-aprendizaje-profundo">4. Fundamentos cognitivos del aprendizaje profundo</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n125"><a class="md-toc-inner" href="#41-fricción">4.1. Fricción</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n127"><a class="md-toc-inner" href="#42-conexión-con-el-conocimiento-previo">4.2. Conexión con el conocimiento previo</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n129"><a class="md-toc-inner" href="#43-andamiaje">4.3. Andamiaje</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n131"><a class="md-toc-inner" href="#44-implicación-para-la-ia">4.4. Implicación para la IA</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n137"><a class="md-toc-inner" href="#5-propuesta-de-criterios-de-uso-las-esclusas">5. Propuesta de criterios de uso: las esclusas</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n139"><a class="md-toc-inner" href="#51-esclusa-temporal">5.1. Esclusa temporal</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n141"><a class="md-toc-inner" href="#52-esclusas-sobre-el-tipo-de-tarea-usos-desaconsejados">5.2. Esclusas sobre el tipo de tarea: usos desaconsejados</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n150"><a class="md-toc-inner" href="#53-esclusas-sobre-el-tipo-de-tarea-usos-recomendados">5.3. Esclusas sobre el tipo de tarea: usos recomendados</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n160"><a class="md-toc-inner" href="#6-conclusiones">6. Conclusiones</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n164"><a class="md-toc-inner" href="#7-referencias">7. Referencias</a></span></p></div><h2 id='1-introducción-qué-contiene-este-documento-y-cómo-se-ha-generado'><span>1. Introducción: ¿Qué contiene este documento y cómo se ha generado?</span></h2><p><span>El texto que se muestra a continuación procede de una charla que impartí el día 8 de octubre de 2026 en la jornada inaugural de la décima promoción del máster GEOFOREST (Máster universitario en Geomática, Teledetección y modelos espaciales aplicados a la gestión forestal) de la Universidad de Córdoba. La charla se tituló &quot;Las IAs generativas para los estudiantes, ¿aliadas o enemigas del aprendizaje?&quot;. Duró unos 30 minutos (me alargué más de lo que me pidieron. Lo siento)</span></p><p><span>En esta sección introductoria describo cómo se ha generado tanto el contenido de la charla como el texto que se muestra a continuación. Creo que en una época en la que los textos y las ideas pueden ser generadas por una IA, es importante ser transparente. </span></p><p><span>Para generar lo que puedes leer a continuación se han dado los siguientes pasos:</span></p><ol start='' ><li><p><span>En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en </span><a href='https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html'><span>estas</span></a><span> buenas prácticas escribí hace unos meses. Si tienes curiosidad, </span><a href='https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/1_hilo_argumental_inicial.md'><span>aquí</span></a><span> tienes un documento con el hilo argumental inicial. </span></p></li><li><p><span>Después pasé el documento anterior a dos IAs para que identificaran incoherencias y para que aportaran bibliografía sobre las afirmaciones realizadas en el texto. El </span><em><span>prompt</span></em><span> que usé es este: </span></p></li></ol><blockquote><p><span>Tengo que preparar una conferencia sobre el modo en el que las IAs pueden usarse para promover el aprendizaje profundo en estudiantes universitarios.</span></p><p><span>La charla se llama &quot;Las IAs generativas para los estudiantes, ¿aliadas o enemigas?</span></p><p><span>El archivo markdown adjunto contiene una propuesta de estructura de dichoa charla.</span></p><p><span>Quiero que la trabajemos juntos. En primer lugar quiero que evalues la coherencia de los mensajes que se plantean en el texto. DEvuélveme el mismo texto que te envío pero añade comentarios entre corchetes cuando identifiques evidencias sólidas que contradigan o maticen lo que yo he escrito. Añade también referencias bibliográficas entre paréntesis para las afirmaciones para las que encuentres evidencias científicas publicadas.</span></p></blockquote><p><span class='md-tab'>	</span><span>En </span><a href='https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/2_hilo_argumental_comentado_por_IAs.md'><span>este</span></a><span> documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. </span></p><ol start='3' ><li><p><span>El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. </span><a href='https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/3_hilo_argumental_conciliado_IAs_fjbonet.md'><span>Aquí</span></a><span> se puede ver el hilo argumental &quot;final&quot;.</span></p></li><li><p><span>Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. </span><a href='https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/tags/2026_2027/presentacion_IAs_geoforest.pptx'><span>Aquí</span></a><span> está disponible la presentación en formato Powerpoint. </span></p></li><li><p><span>El día de la charla puse el móvil a grabar y se generó un audio. Use Gemini para transcribirlo literalmente. Me da un poco de pudor compartir tanto el audio como la transcripción, así que no lo haré.</span></p></li><li><p><span>Después pasé el audio transcrito a Claude y le pedí lo siguiente:</span></p></li></ol><blockquote><p><span>Ya he impartido la charla. Te adjunto un documentto de markdown que recoge la transcripción literal del audio de dicha charla. También te adjunto la presentación de diapositivas que usé para guiar la charla.</span></p><p><span>Quiero que, usando el contenido de la presentación y los comentarios que hay en el texto, lo rehagas y generes otro con las siguientes características:</span></p><ul><li><p><span>Debe de estar escrito con un lenguaje científico.</span></p></li><li><p><span>Elimina las bromas y comentarios personales hechos por el profesor para capturar la atención de la audiencia.</span></p></li><li><p><span>Añade comentarios en negrita después de las afirmaciones que no tengan respaldo científico o que sean directamente incorrectas.</span></p></li><li><p><span>Mantén el hilo argumental de la exposición hecha por el profesor.</span></p></li></ul></blockquote><p><span class='md-tab'>	</span><span>El resultado de este </span><em><span>prompt</span></em><span> es lo que puedes leer a continuación. La IA ha añadido comentarios que se </span><span class='md-tab'>	</span><span>muestran en negrita. Yo también he añadido algún comentario que se muestra en cursiva. </span></p><p>&nbsp;</p><h2 id='1-planteamiento-del-problema'><span>1. Planteamiento del problema</span></h2><p><span>La pregunta que da título a la exposición no admite, por el momento, una respuesta concluyente. La inteligencia artificial (IA) generativa es una tecnología reciente y disruptiva, cuyos efectos sobre el aprendizaje apenas han comenzado a estudiarse de forma sistemática. Las valoraciones sociales oscilan entre la expectativa de un deterioro profundo de las capacidades humanas y la de una liberación generalizada de trabajo. </span><strong><span>[Comentario: la falta de respuesta concluyente es coherente con el estado de la evidencia. Los metaanálisis disponibles muestran efectos positivos sobre el rendimiento académico, pero se basan mayoritariamente en estudios de corta duración, con alta heterogeneidad y calidad metodológica desigual, y rara vez miden la retención o la transferencia sin la IA disponible (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;The+effect+of+ChatGPT+on+students&#39;+learning+performance%2C+learning+perception%2C+and+higher-order+thinking&quot;'><strong><span>Wang &amp; Fan, 2025</span></strong></a><strong><span>).]</span></strong></p><p><span>El objetivo de esta charla no es ofrecer una respuesta definitiva, sino proponer un marco de reflexión. Ese marco se construye a partir de la experiencia docente del autor durante los primeros años de uso de estas herramientas (aproximadamente desde la publicación de ChatGPT, en noviembre de 2022) y de la literatura sobre cómo aprenden los seres humanos. La exposición concluye con una propuesta provisional de criterios de uso.</span></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_1_portada.png" alt="diapo1"></p><p>&nbsp;</p><h2 id='2-contexto-actitudes-individuales-respuesta-institucional-y-efectos-de-la-prohibición'><span>2. Contexto: actitudes individuales, respuesta institucional y efectos de la prohibición</span></h2><p>&nbsp;</p><h3 id='21-actitudes-individuales'><span>2.1. Actitudes individuales</span></h3><p><span>Las actitudes individuales ante la IA generativa pueden agruparse en tres perfiles: los adoptantes tempranos, que la usan de forma intensiva; quienes la rechazan por motivos éticos o ambientales; y un grupo intermedio que la incorpora con cautela. En la consulta informal realizada al público, predominaron los adoptantes y los cautelosos, y ningún asistente se identificó con el rechazo. El autor declara una posición mixta: uso intensivo acompañado de reservas éticas. Estas actitudes dependen de la experiencia y la disposición de cada persona, y pueden coexistir de forma contradictoria en un mismo individuo.</span></p><p><span>Otras tecnologías hoy plenamente asumidas en las ciencias ambientales y forestales, como los sistemas de información geográfica (SIG) o la teledetección, probablemente suscitaron en su origen una diversidad de actitudes comparable. Hoy forman parte de la práctica cotidiana y su efecto sobre las capacidades cognitivas no se cuestiona. </span><strong><span>[Comentario: la analogía es plausible, pero el paralelismo no es completo. Los SIG generaron en los años noventa un debate académico sostenido sobre sus implicaciones epistemológicas y sociales (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Ground+truth%3A+The+social+implications+of+geographic+information+systems&quot;'><strong><span>Pickles, 1995</span></strong></a><strong><span>), aunque no centrado en la pérdida de capacidades cognitivas. Un precedente más próximo es el de la calculadora, cuyo uso no deterioró las destrezas básicas según los metaanálisis (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;A+meta-analysis+of+the+effects+of+calculators+on+students&#39;+achievement+and+attitude+levels&quot;'><strong><span>Ellington, 2003</span></strong></a><strong><span>). A diferencia de ambas, la IA generativa puede ejecutar directamente tareas de comprensión, síntesis y redacción.]</span></strong></p><p>&nbsp;</p><h3 id='22-respuesta-institucional'><span>2.2. Respuesta institucional</span></h3><p><span>Las universidades, como instituciones, no han ofrecido hasta ahora una respuesta operativa al uso de la IA en la docencia. Existen marcos normativos y orientaciones de rango supranacional, como el Reglamento europeo de IA y la guía de la UNESCO, pero no están concebidos para la escala del aula ni de la asignatura. </span><strong><span>[Comentario: conviene precisar la naturaleza de estos instrumentos. El documento de la UNESCO es una guía de recomendaciones, no un reglamento (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Guidance+for+generative+AI+in+education+and+research&quot;'><strong><span>UNESCO, 2023</span></strong></a><strong><span>). El Reglamento europeo regula sobre todo la seguridad y los riesgos de los sistemas de IA; no tiene por objeto proteger la capacidad cognitiva de los usuarios, aunque su artículo 4 exige garantizar la alfabetización en IA del personal de las organizaciones que la utilizan (</span></strong><a href='http://data.europa.eu/eli/reg/2024/1689/oj'><strong><span>Reglamento (UE) 2024/1689</span></strong></a><strong><span>).]</span></strong></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_3_tsunami.png" alt="diapo3"></p><p>&nbsp;</p><h3 id='23-consecuencia-de-primer-orden-la-prohibición'><span>2.3. Consecuencia de primer orden: la prohibición</span></h3><p><span>La combinación de una tecnología que no ha sido demandada por la comunidad educativa, unas actitudes individuales heterogéneas y un marco normativo genérico conduce a que una parte relevante del profesorado opte por prohibir o restringir el uso de la IA. Esta respuesta es comprensible, dado que el profesorado carece en general de formación y de respaldo institucional para gestionar su uso. </span><strong><span>[Comentario: no se aporta evidencia sobre la proporción de profesorado que adopta políticas prohibitivas; la afirmación debería presentarse como una observación del autor.]</span></strong></p><p><span>La prohibición contrasta con la amplitud del uso. En la exposición se afirmó que en torno al 90 % de la población de un país como España usa la IA a diario. </span><strong><span>[Comentario: la cifra es incorrecta para la población general. Las encuestas sitúan el uso diario en la población general muy por debajo de ese valor. La cifra de en torno al 90 % corresponde al uso (no necesariamente diario) por parte de estudiantes universitarios: un 92 % en el Reino Unido en 2025 (</span></strong><a href='https://www.google.com/search?q=HEPI+&quot;Student+Generative+AI+Survey+2025&quot;'><strong><span>Freeman, 2025</span></strong></a><strong><span>). Para el argumento de la charla, este último dato es además el más pertinente.]</span></strong></p><p>&nbsp;</p><h3 id='24-consecuencia-de-segundo-orden-el-uso-encubierto'><span>2.4. Consecuencia de segundo orden: el uso encubierto</span></h3><p><span>Desde una perspectiva sistémica, las intervenciones sobre sistemas complejos suelen producir consecuencias no previstas. En este caso, la prohibición tendería a desplazar el uso de la IA hacia prácticas encubiertas, dada la disponibilidad de una herramienta de gran potencia. El estudiante percibe un problema que la institución no aborda, y el profesor carece de medios para identificar los trabajos elaborados con IA. </span><strong><span>[Comentario: la hipótesis del desplazamiento hacia el uso encubierto es plausible, pero no se aporta evidencia empírica que la sustente. En cambio, la dificultad para identificar los textos generados por IA sí está bien documentada: ni el profesorado novel ni el experimentado los distingue de forma fiable (</span></strong><a href='https://doi.org/10.1016/j.caeai.2024.100209'><strong><span>Fleckenstein et al., 2024</span></strong></a><strong><span>), y los detectores automáticos tampoco son fiables (</span></strong><a href='https://doi.org/10.1007/s40979-023-00146-z'><strong><span>Weber-Wulff et al., 2023</span></strong></a><strong><span>).]</span></strong></p><p>&nbsp;</p><h3 id='25-una-alternativa-aprender-a-usar-la-ia-en-el-aula'><span>2.5. Una alternativa: aprender a usar la IA en el aula</span></h3><p><span>Como alternativa a la prohibición, el autor optó desde el inicio por explorar con sus estudiantes el uso de la IA como herramienta de aprendizaje. Los primeros intentos tuvieron efectos negativos no previstos; los ajustes posteriores han permitido delimitar un espacio de uso más seguro. Una limitación de este enfoque es que cada cohorte experimenta solo los errores de su curso, y no las correcciones introducidas después.</span></p><p><span>El análisis de esos errores se presenta a continuación. Se parte de la premisa de que el aprendizaje depende menos de cometer errores que de cómo se afrontan una vez cometidos. </span><strong><span>[Comentario: respaldado, con matices. Los errores seguidos de retroalimentación correctiva favorecen el aprendizaje (</span></strong><a href='https://doi.org/10.1146/annurev-psych-010416-044022'><strong><span>Metcalfe, 2017</span></strong></a><strong><span>), y el entrenamiento que incorpora explícitamente la gestión de errores mejora la transferencia (</span></strong><a href='https://doi.org/10.1037/0021-9010.93.1.59'><strong><span>Keith &amp; Frese, 2008</span></strong></a><strong><span>). La evidencia se refiere sobre todo al aprendizaje individual; trasladarla a la mejora de una práctica docente es una extrapolación razonable, pero no directa.]</span></strong></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_6_meme_correr_desierto.png" alt="diapo6"></p><p>&nbsp;</p><h2 id='3-experiencia-docente-tres-errores-cometidos'><span>3. Experiencia docente: tres errores cometidos</span></h2><h3 id='31-primer-error-lo-que-es-útil-para-el-profesor-lo-es-también-para-el-estudiante'><span>3.1. Primer error: lo que es útil para el profesor lo es también para el estudiante</span></h3><p><span>Para el autor, la IA generativa ha transformado la forma de trabajar y, sobre todo, de aprender. Le permite iniciar con facilidad scripts de programación, preparar asignaturas nuevas y acceder con rapidez a información sobre campos que antes le resultaban poco accesibles. El autor considera este cambio de mayor alcance que la llegada de las enciclopedias digitales a finales de los años noventa.</span></p><p><span>Sobre esa base, permitió a sus estudiantes usar la IA libremente en un examen. Esperaba reflexión, cuestionamiento y elaboración de ideas nuevas. Lo observado fue distinto: los estudiantes trasladaban literalmente las preguntas a la IA, no repreguntaban, no cuestionaban la respuesta y la copiaban en el examen. El resultado fue un aprendizaje escaso. </span><strong><span>[Comentario: la observación es coherente con estudios controlados. En un experimento con universitarios, el grupo que usó ChatGPT obtuvo mejores puntuaciones en la tarea de escritura, pero no mayor adquisición ni transferencia de conocimiento, y redujo los procesos de autorregulación; los autores lo denominan «pereza metacognitiva» (</span></strong><a href='https://doi.org/10.1111/bjet.13544'><strong><span>Fan et al., 2025</span></strong></a><strong><span>).]</span></strong></p><p><span>La explicación propuesta se basa en la diferencia entre las estructuras de conocimiento de un experto y las de un aprendiz. El experto dispone de marcos conceptuales consolidados y de una experiencia acumulada de contradicciones y revisiones, lo que le permitiría usar la IA para potenciar su aprendizaje en un ciclo de retroalimentación positiva. En el aprendiz, que aún no dispone de esos marcos, se produciría un ciclo de retroalimentación negativa: el uso de la IA al modo del experto reduciría determinadas capacidades cognitivas. En la exposición se afirmó que este efecto se ha comprobado «en multitud de ocasiones». </span><strong><span>[Comentario: la hipótesis es plausible, pero la afirmación sobre su comprobación es excesiva. La evidencia sobre productividad apunta en sentido contrario: en atención al cliente, consultoría y escritura profesional, quienes más mejoran su rendimiento con IA son los trabajadores novatos o menos cualificados (</span></strong><a href='https://doi.org/10.1093/qje/qjae044'><strong><span>Brynjolfsson et al., 2025</span></strong></a><strong><span>;</span></strong><span> </span><a href='https://doi.org/10.2139/ssrn.4573321'><strong><span>Dell&#39;Acqua et al., 2023</span></strong></a><strong><span>;</span></strong><span> </span><a href='https://doi.org/10.1126/science.adh2586'><strong><span>Noy &amp; Zhang, 2023</span></strong></a><strong><span>). La forma de conciliar ambos resultados es la distinción entre rendimiento y aprendizaje (sección 3.2). En programación, la variable decisiva parece ser la competencia metacognitiva más que la experiencia: la IA favorece a los estudiantes con buenas destrezas metacognitivas y perjudica a los que tienen dificultades, que desarrollan una ilusión de competencia (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;The+widening+gap%3A+The+benefits+and+harms+of+generative+AI+for+novice+programmers&quot;'><strong><span>Prather et al., 2024</span></strong></a><strong><span>). El efecto de reversión de la pericia ofrece un marco teórico afín: los apoyos útiles para el novato pueden ser inútiles o perjudiciales para el experto, y viceversa (</span></strong><a href='https://doi.org/10.1207/S15326985EP3801_4'><strong><span>Kalyuga et al., 2003</span></strong></a><strong><span>).]</span></strong></p><p><strong><span>[Comentario: las dos referencias de la diapositiva no respaldan directamente la comparación entre experto y aprendiz. Lee et al. (2025) es una encuesta a trabajadores del conocimiento que asocia la confianza en la IA con menor pensamiento crítico y la confianza en uno mismo con más; es correlacional y no compara expertos con aprendices (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;The+impact+of+generative+AI+on+critical+thinking%3A+Self-reported+reductions+in+cognitive+effort&quot;'><strong><span>Lee et al., 2025</span></strong></a><strong><span>). Kazemitabaar et al. (2023) no encontró un efecto negativo general en principiantes: el acceso a un generador de código mejoró la realización de tareas sin empeorar el rendimiento posterior sin IA (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Studying+the+effect+of+AI+code+generators+on+supporting+novice+learners+in+introductory+programming&quot;'><strong><span>Kazemitabaar et al., 2023</span></strong></a><strong><span>).]</span></strong></p><p><span>El mecanismo invocado es la descarga cognitiva (</span><em><span>cognitive offloading</span></em><span>): al disponer de un sistema externo de gran capacidad, el usuario delega en él procesos cognitivos superiores, como la comprensión profunda, la síntesis o el pensamiento crítico, de forma no deliberada. El uso prolongado de este apoyo atrofiaría esas capacidades, del mismo modo que una muleta usada indefinidamente debilita la musculatura. </span><strong><span>[Comentario: el concepto está bien establecido, pero se presenta de forma incompleta. La descarga cognitiva es con frecuencia una decisión estratégica, no necesariamente inconsciente, y puede ser beneficiosa, porque libera recursos para otras tareas; su coste principal documentado es una peor memoria de lo delegado (</span></strong><a href='https://doi.org/10.1016/j.tics.2016.07.002'><strong><span>Risko &amp; Gilbert, 2016</span></strong></a><strong><span>). La asociación entre uso frecuente de IA, descarga cognitiva y menor pensamiento crítico se ha observado en estudios correlacionales que no prueban causalidad (</span></strong><a href='https://doi.org/10.3390/soc15010006'><strong><span>Gerlich, 2025</span></strong></a><strong><span>). La pérdida de destrezas por delegación sí se ha documentado en profesionales: endoscopistas habituados al apoyo de la IA detectaron menos adenomas al trabajar sin ella (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Endoscopist+deskilling+risk+after+exposure+to+artificial+intelligence+in+colonoscopy&quot;'><strong><span>Budzyń et al., 2025</span></strong></a><strong><span>).]</span></strong></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_11_aprendiz_experto.png" alt="diapo11"></p><p>&nbsp;</p><h3 id='32-segundo-supuesto-un-buen-resultado-implica-aprendizaje'><span>3.2. Segundo supuesto: un buen resultado implica aprendizaje</span></h3><p><span>El segundo supuesto erróneo, extendido en el conjunto del sistema educativo, consiste en inferir que un producto de calidad (un informe, un artículo, una gráfica) elaborado con IA refleja un aprendizaje profundo, entendido como aquel que se mantiene en el tiempo más allá de la evaluación. </span><strong><span>[Comentario: la definición es parcial. En la literatura, el aprendizaje profundo (</span><span>*</span><span>deep approach</span><span>*</span><span>) se asocia sobre todo a la búsqueda de comprensión y significado, frente a la memorización reproductiva (</span><span>*</span><span>surface approach</span><span>*</span><span>) (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;On+qualitative+differences+in+learning&quot;+Marton+Säljö'><strong><span>Marton &amp; Säljö, 1976</span></strong></a><strong><span>); la retención a largo plazo es una consecuencia, no su definición.]</span></strong></p><p><span>La distinción entre rendimiento (lo observable durante la práctica) y aprendizaje (lo que perdura y se transfiere) es uno de los resultados más sólidos de la psicología cognitiva (</span><a href='https://doi.org/10.1177/1745691615569000'><span>Soderstrom &amp; Bjork, 2015</span></a><span>). Los estudios experimentales indican que el uso de la IA para generar productos acabados no mejora el aprendizaje o incluso lo reduce. En un experimento de campo con unos 1.000 estudiantes de secundaria, el acceso a GPT-4 sin restricciones mejoró un 48 % el rendimiento en los ejercicios de práctica, pero redujo un 17 % el rendimiento en el examen posterior sin IA respecto al grupo de control (</span><a href='https://doi.org/10.1073/pnas.2422633122'><span>Bastani et al., 2025</span></a><span>).</span></p><p><span>Lo que produce aprendizaje es el proceso, no solo la calidad del resultado. Ello no implica restar valor a la calidad del producto, sino advertir que los sistemas educativos tienden a centrarse en él en exceso. Este problema es anterior a la IA, que únicamente lo ha hecho más visible.</span></p><p><span>Cuando la IA se orienta al proceso, los resultados mejoran. </span><strong><span>[Comentario: respaldado, aunque con resultados de distinta magnitud. En el estudio de Bastani et al., una versión de GPT-4 diseñada como tutor, que no ofrecía las respuestas directamente, eliminó el efecto negativo sobre el examen, aunque no lo mejoró significativamente respecto al control (</span></strong><a href='https://doi.org/10.1073/pnas.2422633122'><strong><span>Bastani et al., 2025</span></strong></a><strong><span>). En un ensayo controlado con estudiantes universitarios de Física, un tutor de IA diseñado según principios pedagógicos produjo ganancias de aprendizaje superiores al doble que una clase de aprendizaje activo (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;AI+tutoring+outperforms+in-class+active+learning&quot;'><strong><span>Kestin et al., 2025</span></strong></a><strong><span>). En ambos casos se trata de herramientas configuradas específicamente, no de asistentes de uso general.]</span></strong></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_12_productismo.png" alt="diapo12"></p><p>&nbsp;</p><h3 id='33-tercer-supuesto-la-ia-es-igualmente-útil-para-cualquier-tarea'><span>3.3. Tercer supuesto: la IA es igualmente útil para cualquier tarea</span></h3><p><span>El tercer supuesto erróneo es considerar la IA como una herramienta polivalente que mejora el aprendizaje en todos los ámbitos. La experiencia del autor y la literatura indican que algunos usos lo favorecen y otros lo dificultan.</span></p><p><span>Entre los usos que tienden a favorecer el aprendizaje se encuentran los siguientes:</span></p><ul><li><p><strong><span>Programación.</span></strong><span> La IA puede facilitar el aprendizaje de lenguajes de programación si se usa con criterios adecuados. </span><strong><span>[Comentario: la generalización es excesiva. El acceso a la IA no perjudicó el aprendizaje de principiantes en un estudio (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Studying+the+effect+of+AI+code+generators+on+supporting+novice+learners+in+introductory+programming&quot;'><strong><span>Kazemitabaar et al., 2023</span></strong></a><strong><span>), pero sus efectos dependen de las destrezas metacognitivas del estudiante (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;The+widening+gap%3A+The+benefits+and+harms+of+generative+AI+for+novice+programmers&quot;'><strong><span>Prather et al., 2024</span></strong></a><strong><span>). No hay evidencia de una aceleración general para «cualquier lenguaje».]</span></strong></p></li><li><p><strong><span>Búsqueda de información.</span></strong><span> La búsqueda semántica aumenta la eficiencia en la localización de literatura científica, siempre que se empleen herramientas adecuadas. En la exposición se recomendaron Perplexity y Elicit y se desaconsejó ChatGPT. </span><strong><span>[Comentario: los modelos de lenguaje sin acceso a fuentes inventan referencias con frecuencia: el 55 % de las citas de GPT-3.5 y el 18 % de las de GPT-4 eran inexistentes en un estudio (</span></strong><a href='https://doi.org/10.1038/s41598-023-41032-5'><strong><span>Walters &amp; Wilder, 2023</span></strong></a><strong><span>). Sin embargo, no se dispone de evaluaciones independientes que respalden la superioridad de las herramientas recomendadas, y las versiones actuales de ChatGPT también incorporan búsqueda en fuentes. Cualquier herramienta requiere verificación sistemática de las referencias.]</span></strong></p></li><li><p><strong><span>Explicación de conceptos.</span></strong><span> El diálogo de tipo socrático con la IA, basado en repreguntar, favorece la comprensión. </span><strong><span>[Comentario: respaldado cuando la herramienta está diseñada para no dar respuestas directas (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;AI+tutoring+outperforms+in-class+active+learning&quot;'><strong><span>Kestin et al., 2025</span></strong></a><strong><span>;</span></strong><span> </span><a href='https://doi.org/10.1073/pnas.2422633122'><strong><span>Bastani et al., 2025</span></strong></a><strong><span>).]</span></strong></p></li></ul><p><span>Entre los usos que tienden a dificultar el aprendizaje se encuentran los siguientes:</span></p><ul><li><p><strong><span>Redacción.</span></strong><span> Delegar la escritura en la IA no sería adecuado, sobre todo para personas con poca experiencia en la escritura. </span><strong><span>[Comentario: la afirmación referida a expertos no está respaldada de forma general. En términos de productividad, la IA mejora la rapidez y la calidad de la escritura profesional (</span></strong><a href='https://doi.org/10.1126/science.adh2586'><strong><span>Noy &amp; Zhang, 2023</span></strong></a><strong><span>). La evidencia sobre efectos cognitivos de redactar con IA es aún preliminar: un estudio con electroencefalografía encontró menor conectividad cerebral y menor sensación de autoría al escribir con ChatGPT, pero es un preprint sin revisión por pares y con una muestra pequeña (</span></strong><a href='https://arxiv.org/abs/2506.08872'><strong><span>Kosmyna et al., 2025</span></strong></a><strong><span>).]</span></strong></p></li><li><p><strong><span>Resumen.</span></strong><span> Resumir es una tarea cognitivamente exigente que no debería delegarse. </span><strong><span>[Comentario: parcialmente respaldado. Resumir requiere procesamiento activo, pero su eficacia como técnica de estudio es limitada si el estudiante no ha sido entrenado en ella (</span></strong><a href='https://doi.org/10.1177/1529100612453266'><strong><span>Dunlosky et al., 2013</span></strong></a><strong><span>). Además, los resúmenes de artículos científicos generados por modelos de lenguaje tienden a generalizar en exceso las conclusiones (</span></strong><a href='https://doi.org/10.1098/rsos.241776'><strong><span>Peters &amp; Chin-Yee, 2025</span></strong></a><strong><span>).]</span></strong></p></li><li><p><strong><span>Cuestionamiento.</span></strong><span> Delegar el juicio crítico no es recomendable independientemente de lo bien que usemos la IA. </span><strong><span>[Comentario: lo que sí es útil es usar la IA como interlocutor que lo ejercite; los tutores diseñados para cuestionar al estudiante obtienen buenos resultados (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;AI+tutoring+outperforms+in-class+active+learning&quot;'><strong><span>Kestin et al., 2025</span></strong></a><strong><span>).]</span></strong></p></li></ul><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_13_multiuso.png" alt="diapo13"></p><p>&nbsp;</p><h2 id='4-fundamentos-cognitivos-del-aprendizaje-profundo'><span>4. Fundamentos cognitivos del aprendizaje profundo</span></h2><p><span>La primera conclusión general es que el efecto de la IA sobre el aprendizaje no depende de su uso o no uso, sino del modo de uso. Más concretamente, depende de que ese uso se alinee con los mecanismos por los que aprende el cerebro humano, que tanto estudiantes como profesores suelen desatender. De esos mecanismos, se destacan tres condiciones.</span></p><h3 id='41-fricción'><span>4.1. Fricción</span></h3><p><span>El aprendizaje requiere esfuerzo. Para que los conceptos se consoliden deben ser recuperados, contrastados con otros conceptos, relacionados y discutidos, de forma análoga al entrenamiento físico o a la práctica de un instrumento musical. Cuando la práctica cesa, lo aprendido se deteriora. En la exposición se afirmó que «si no hay esfuerzo, no hay aprendizaje». </span><strong><span>[Comentario: la idea central está bien respaldada por la investigación sobre «dificultades deseables»: ciertas dificultades que reducen el rendimiento inmediato mejoran la retención y la transferencia (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Making+things+hard+on+yourself%2C+but+in+a+good+way&quot;'><strong><span>Bjork &amp; Bjork, 2011</span></strong></a><strong><span>). También por el efecto de generación, según el cual se recuerda mejor lo que uno genera que lo que lee ya elaborado (</span></strong><a href='https://doi.org/10.1037/0278-7393.4.6.592'><strong><span>Slamecka &amp; Graf, 1978</span></strong></a><strong><span>), y por el efecto de la práctica de recuperación (</span></strong><a href='https://doi.org/10.1111/j.1467-9280.2006.01693.x'><strong><span>Roediger &amp; Karpicke, 2006</span></strong></a><strong><span>). Sin embargo, la formulación absoluta es incorrecta: existe aprendizaje incidental sin esfuerzo deliberado, y las dificultades solo son deseables si el estudiante puede superarlas.]</span></strong></p><h3 id='42-conexión-con-el-conocimiento-previo'><span>4.2. Conexión con el conocimiento previo</span></h3><p><span>El conocimiento nuevo no se incorpora en el vacío, sino en relación con lo que ya se sabe. Ello genera una jerarquía en el aprendizaje: la selvicultura requiere conocimientos de ecología; la ecología, de botánica; y la botánica, de edafología. Del mismo modo, la física cuántica sería inaccesible sin la física newtoniana. </span><strong><span>[Comentario: el papel del conocimiento previo es un principio clásico (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Educational+psychology%3A+A+cognitive+view&quot;'><strong><span>Ausubel, 1968</span></strong></a><strong><span>). No obstante, un metaanálisis amplio muestra que el conocimiento previo predice con fuerza el conocimiento final, pero su relación con la ganancia de aprendizaje es más débil e inconsistente de lo que se suele suponer (</span></strong><a href='https://doi.org/10.1080/00461520.2021.1939700'><strong><span>Simonsmeier et al., 2022</span></strong></a><strong><span>)]</span></strong></p><h3 id='43-andamiaje'><span>4.3. Andamiaje</span></h3><p><span>El aprendizaje requiere apoyos externos provisionales, análogos a los andamios de una construcción. En la docencia adoptan la forma de una retroalimentación orientada a la mejora, de la recomendación de una lectura o de la intervención de un compañero que ya domina un concepto. El rasgo esencial del andamio es que debe retirarse: si permanece al final del proceso, sostiene el peso de la estructura y se convierte en una muleta. </span><strong><span>[Comentario: respaldado. El concepto procede de</span></strong><span> </span><a href='https://doi.org/10.1111/j.1469-7610.1976.tb00381.x'><strong><span>Wood et al. (1976)</span></strong></a><span> </span><strong><span>y se vincula con la zona de desarrollo próximo de</span></strong><span> </span><a href='https://scholar.google.com/scholar?q=&quot;Mind+in+society%3A+The+development+of+higher+psychological+processes&quot;'><strong><span>Vygotsky (1978)</span></strong></a><strong><span>. La retirada progresiva del apoyo (</span><span>*</span><span>fading</span><span>*</span><span>) se considera una característica definitoria del andamiaje (</span></strong><a href='https://doi.org/10.1007/s10648-010-9127-6'><strong><span>van de Pol et al., 2010</span></strong></a><strong><span>).]</span></strong></p><h3 id='44-implicación-para-la-ia'><span>4.4. Implicación para la IA</span></h3><p><span>La IA generativa puede vulnerar estas tres condiciones. Salvo que se le indique expresamente, no genera fricción, no tiene en cuenta la estructura de conocimientos del usuario y no actúa como un andamio que se retira: proporciona de una vez todo el conocimiento solicitado. Por tanto, un uso favorable al aprendizaje debe adaptarse a estas condiciones. </span><strong><span>[Comentario: coherente con la evidencia. El mismo modelo de lenguaje produce efectos opuestos sobre el aprendizaje según se configure para dar respuestas o para guiar al estudiante (</span></strong><a href='https://doi.org/10.1073/pnas.2422633122'><strong><span>Bastani et al., 2025</span></strong></a><strong><span>).]</span></strong></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_14_aprendizaje_profundo.png" alt="diapo14"></p><p>&nbsp;</p><p>&nbsp;</p><h2 id='5-propuesta-de-criterios-de-uso-las-esclusas'><span>5. Propuesta de criterios de uso: las esclusas</span></h2><p><span>Un uso de la IA compatible con el aprendizaje requiere establecer límites. Para designarlos se adopta el término «esclusa», tomado del periodista Daniel Arjona: en ingeniería hidráulica, una esclusa es un recinto que regula el paso entre dos niveles, y solo permite avanzar al siguiente tramo cuando se cumplen determinadas condiciones. Aplicado al aprendizaje, el término alude a la autolimitación del uso de la IA en varias dimensiones. Las propuestas que siguen derivan de la experiencia docente del autor y del diálogo con estudiantes. </span><strong><span>[Comentario: la fuente del término es un texto divulgativo, no revisado por pares (</span></strong><a href='https://elarjonauta.substack.com/p/el-claustro-y-la-nave-espacial-universidad-ia'><strong><span>Arjona, 2026</span></strong></a><strong><span>). Los criterios propuestos se apoyan en la literatura en la medida que se indica en cada caso.]</span></strong></p><h3 id='51-esclusa-temporal'><span>5.1. Esclusa temporal</span></h3><p><span>Según Arjona, «la IA puede llegar antes, durante o después del esfuerzo. Si llega antes, coloniza la fase generativa. Si llega durante, puede orientar o puede sustituir. Si llega después, funciona como contraste: espejo, adversario, corrector». De ello se deriva que la IA no debería usarse en ningún caso antes del esfuerzo propio, que su uso durante el proceso es ambivalente y que resulta más eficaz después de que el estudiante haya trabajado el problema mediante la lectura, la discusión con compañeros o la consulta al profesor. </span><strong><span>[Comentario: el principio de «esfuerzo primero» está respaldado por la investigación sobre fracaso productivo: intentar resolver un problema antes de recibir instrucción mejora la comprensión conceptual y la transferencia (</span></strong><a href='https://doi.org/10.1080/00461520.2016.1155457'><strong><span>Kapur, 2016</span></strong></a><strong><span>;</span></strong><span> </span><a href='https://doi.org/10.3102/00346543211019105'><strong><span>Sinha &amp; Kapur, 2021</span></strong></a><strong><span>). Sin embargo, la prohibición absoluta del uso previo no lo está. Para principiantes, la instrucción guiada y los ejemplos resueltos al inicio suelen ser más eficaces que la exploración autónoma (</span></strong><a href='https://doi.org/10.1207/s15326985ep4102_1'><strong><span>Kirschner et al., 2006</span></strong></a><strong><span>), y el propio metaanálisis de Sinha y Kapur muestra que el efecto depende del diseño de la actividad. Sería más preciso formular el criterio como «no usar la IA para generar la respuesta antes del esfuerzo propio».]</span></strong></p><h3 id='52-esclusas-sobre-el-tipo-de-tarea-usos-desaconsejados'><span>5.2. Esclusas sobre el tipo de tarea: usos desaconsejados</span></h3><p><span>Se proponen tres usos desaconsejados:</span></p><ol start='' ><li><p><strong><span>Creación de contenido cuando sustituye el objeto de aprendizaje.</span></strong><span> Si una actividad persigue que el estudiante aprenda a construir una presentación con un hilo argumental, delegarla en la IA anula su finalidad. Si el objeto de aprendizaje es otro (por ejemplo, analizar las diferencias entre R y Python), el formato puede delegarse sin coste para el aprendizaje. </span><strong><span>[Comentario: coherente con el efecto de generación (</span></strong><a href='https://doi.org/10.1037/0278-7393.4.6.592'><strong><span>Slamecka &amp; Graf, 1978</span></strong></a><strong><span>) y con la distinción entre rendimiento y aprendizaje (</span></strong><a href='https://doi.org/10.1177/1745691615569000'><strong><span>Soderstrom &amp; Bjork, 2015</span></strong></a><strong><span>). El criterio de identificar qué parte de la tarea constituye el objeto de aprendizaje es pertinente.]</span></strong></p></li><li><p><strong><span>Cuestiones personales.</span></strong><span> Se desaconseja usar la IA para decisiones personales o como sustituto de apoyo psicológico.  </span><strong><span>[Comentario: estas dos afirmaciones carecen de base científica. Sí está documentada la complacencia: la tendencia de estos modelos a dar la razón al usuario incluso cuando se equivoca (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Towards+understanding+sycophancy+in+language+models&quot;'><strong><span>Sharma et al., 2023</span></strong></a><strong><span>). La evidencia sobre el apoyo psicológico es mixta: un ensayo controlado con un chatbot terapéutico diseñado para ello mostró reducción de síntomas de depresión y ansiedad (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Randomized+trial+of+a+generative+AI+chatbot+for+mental+health+treatment&quot;'><strong><span>Heinz et al., 2025</span></strong></a><strong><span>), mientras que el uso intensivo de chatbots generalistas se ha asociado con más soledad y dependencia emocional (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;How+AI+and+human+behaviors+shape+psychosocial+effects+of+chatbot+use&quot;'><strong><span>Fang et al., 2025</span></strong></a><strong><span>)]</span></strong></p></li><li><p><strong><span>Habilidades ya adquiridas.</span></strong><span> El uso intensivo de la IA para tareas que el usuario ya domina, como la escritura, puede llevar a la pérdida de esas habilidades. </span><strong><span>[Comentario: respaldado por la evidencia de pérdida de destrezas en profesionales expertos tras habituarse al apoyo de la IA (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Endoscopist+deskilling+risk+after+exposure+to+artificial+intelligence+in+colonoscopy&quot;'><strong><span>Budzyń et al., 2025</span></strong></a><strong><span>). Este resultado matiza la idea de la sección 3.1 de que la IA es un «superpoder» para el experto.]</span></strong></p></li></ol><h3 id='53-esclusas-sobre-el-tipo-de-tarea-usos-recomendados'><span>5.3. Esclusas sobre el tipo de tarea: usos recomendados</span></h3><p><span>Se proponen tres usos recomendados:</span></p><ol start='' ><li><p><strong><span>Tareas mecánicas sin valor formativo</span></strong><span>, como transcribir audio, salvo que la propia tarea sea el objeto de aprendizaje.</span></p></li><li><p><strong><span>Tareas simples</span></strong><span>, como realizar cálculos o agregar datos en una hoja de cálculo. </span><strong><span>[Comentario: los modelos de lenguaje pueden cometer errores aritméticos si no ejecutan código o no usan herramientas de cálculo integradas. El criterio debería incluir la verificación de los resultados.]</span></strong></p></li><li><p><strong><span>Aprendizaje de destrezas nuevas pero próximas.</span></strong><span> Este es el uso más valioso: aprender lo que no se sabe, pero que está al alcance a partir de los conocimientos previos. Por ejemplo, preparar una asignatura nueva en un campo afín es abordable con ayuda de la IA; una destreza muy alejada de la propia formación no lo es, porque genera frustración y escaso aprendizaje. </span><strong><span>[Comentario: respaldado. El criterio corresponde a la zona de desarrollo próximo (</span></strong><a href='https://scholar.google.com/scholar?q=&quot;Mind+in+society%3A+The+development+of+higher+psychological+processes&quot;'><strong><span>Vygotsky, 1978</span></strong></a><strong><span>) y a las condiciones de eficacia del andamiaje (</span></strong><a href='https://doi.org/10.1007/s10648-010-9127-6'><strong><span>van de Pol et al., 2010</span></strong></a><strong><span>). Conviene señalar que el ejemplo procede de un profesor experto; para un estudiante, el riesgo descrito en la sección 3.1 sigue presente si la IA resuelve la tarea en lugar de guiarla.]</span></strong></p></li></ol><p>&nbsp;</p><h2 id='6-conclusiones'><span>6. Conclusiones</span></h2><p><span>La IA generativa no es en sí misma aliada ni enemiga del aprendizaje: su efecto depende de si su uso respeta las condiciones de fricción, conexión con el conocimiento previo y andamiaje que requiere el aprendizaje profundo. La experiencia docente analizada muestra tres supuestos erróneos: que lo útil para un experto lo es para un aprendiz, que un buen producto implica aprendizaje y que la IA es igualmente útil para cualquier tarea.</span></p><p><span>Como respuesta, se propone un sistema de esclusas que limita el uso de la IA en función del momento del proceso de aprendizaje y del tipo de tarea. Estos criterios son provisionales: la evidencia disponible procede en gran parte de estudios de corta duración, de contextos distintos al universitario o de diseños correlacionales, y requiere confirmación mediante estudios longitudinales.</span></p><p>&nbsp;</p><h2 id='7-referencias'><span>7. Referencias</span></h2><p><span>Las referencias se han recopilado sin acceso a búsqueda bibliográfica; conviene verificar los datos antes de citarlas. Los enlaces a doi.org y arXiv son directos; los de Google Scholar buscan el título exacto. </span><em><span>No he leído toda esta bibliografía para preparar la charla. Solo los resúmenes de algunas. Ya tengo tarea para los próximos meses ...</span></em></p><ul><li><p><span>Arjona, D. (2026). El claustro y la nave espacial. </span><em><span>El Arjonauta</span></em><span> (Substack). </span><a href='https://elarjonauta.substack.com/p/el-claustro-y-la-nave-espacial-universidad-ia'><span>Enlace</span></a></p></li><li><p><span>Ausubel, D. P. (1968). </span><em><span>Educational psychology: A cognitive view</span></em><span>. Holt, Rinehart &amp; Winston. </span><a href='https://scholar.google.com/scholar?q=&quot;Educational+psychology%3A+A+cognitive+view&quot;'><span>Enlace</span></a></p></li><li><p><span>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö. y Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. </span><em><span>PNAS, 122</span></em><span>(26), e2422633122. </span><a href='https://doi.org/10.1073/pnas.2422633122'><span>Enlace</span></a></p></li><li><p><span>Bjork, E. L. y Bjork, R. A. (2011). Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. En </span><em><span>Psychology and the real world</span></em><span> (pp. 56–64). Worth. </span><a href='https://scholar.google.com/scholar?q=&quot;Making+things+hard+on+yourself%2C+but+in+a+good+way&quot;'><span>Enlace</span></a></p></li><li><p><span>Brynjolfsson, E., Li, D. y Raymond, L. (2025). Generative AI at work. </span><em><span>The Quarterly Journal of Economics, 140</span></em><span>(2), 889–942. </span><a href='https://doi.org/10.1093/qje/qjae044'><span>Enlace</span></a></p></li><li><p><span>Budzyń, K. et al. (2025). Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy: A multicentre, observational study. </span><em><span>The Lancet Gastroenterology &amp; Hepatology</span></em><span>. </span><a href='https://scholar.google.com/scholar?q=&quot;Endoscopist+deskilling+risk+after+exposure+to+artificial+intelligence+in+colonoscopy&quot;'><span>Enlace</span></a></p></li><li><p><span>Dell&#39;Acqua, F. et al. (2023). Navigating the jagged technological frontier. </span><em><span>Harvard Business School Working Paper</span></em><span> 24-013. </span><a href='https://doi.org/10.2139/ssrn.4573321'><span>Enlace</span></a></p></li><li><p><span>Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. y Willingham, D. T. (2013). Improving students&#39; learning with effective learning techniques. </span><em><span>Psychological Science in the Public Interest, 14</span></em><span>(1), 4–58. </span><a href='https://doi.org/10.1177/1529100612453266'><span>Enlace</span></a></p></li><li><p><span>Ellington, A. J. (2003). A meta-analysis of the effects of calculators on students&#39; achievement and attitude levels in precollege mathematics classes. </span><em><span>Journal for Research in Mathematics Education, 34</span></em><span>(5), 433–463. </span><a href='https://scholar.google.com/scholar?q=&quot;A+meta-analysis+of+the+effects+of+calculators+on+students&#39;+achievement+and+attitude+levels&quot;'><span>Enlace</span></a></p></li><li><p><span>Fan, Y. et al. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance. </span><em><span>British Journal of Educational Technology, 56</span></em><span>(2), 489–530. </span><a href='https://doi.org/10.1111/bjet.13544'><span>Enlace</span></a></p></li><li><p><span>Fang, C. M. et al. (2025). How AI and human behaviors shape psychosocial effects of chatbot use: A longitudinal randomized controlled study. Preprint, arXiv. </span><a href='https://scholar.google.com/scholar?q=&quot;How+AI+and+human+behaviors+shape+psychosocial+effects+of+chatbot+use&quot;'><span>Enlace</span></a></p></li><li><p><span>Fleckenstein, J., Meyer, J., Jansen, T., Keller, S. D., Köller, O. y Möller, J. (2024). Do teachers spot AI? Evaluating the detectability of AI-generated texts among student essays. </span><em><span>Computers and Education: Artificial Intelligence, 6</span></em><span>, 100209. </span><a href='https://doi.org/10.1016/j.caeai.2024.100209'><span>Enlace</span></a></p></li><li><p><span>Freeman, J. (2025). </span><em><span>Student Generative AI Survey 2025</span></em><span>. Higher Education Policy Institute, Policy Note 61. </span><a href='https://www.google.com/search?q=HEPI+&quot;Student+Generative+AI+Survey+2025&quot;'><span>Enlace</span></a></p></li><li><p><span>Gerlich, M. (2025). AI tools in society: Impacts on cognitive offloading and the future of critical thinking. </span><em><span>Societies, 15</span></em><span>(1), 6. </span><a href='https://doi.org/10.3390/soc15010006'><span>Enlace</span></a></p></li><li><p><span>Heinz, M. V. et al. (2025). Randomized trial of a generative AI chatbot for mental health treatment. </span><em><span>NEJM AI, 2</span></em><span>(4). </span><a href='https://scholar.google.com/scholar?q=&quot;Randomized+trial+of+a+generative+AI+chatbot+for+mental+health+treatment&quot;'><span>Enlace</span></a></p></li><li><p><span>Kalyuga, S., Ayres, P., Chandler, P. y Sweller, J. (2003). The expertise reversal effect. </span><em><span>Educational Psychologist, 38</span></em><span>(1), 23–31. </span><a href='https://doi.org/10.1207/S15326985EP3801_4'><span>Enlace</span></a></p></li><li><p><span>Kapur, M. (2016). Examining productive failure, productive success, unproductive failure, and unproductive success in learning. </span><em><span>Educational Psychologist, 51</span></em><span>(2), 289–299. </span><a href='https://doi.org/10.1080/00461520.2016.1155457'><span>Enlace</span></a></p></li><li><p><span>Kazemitabaar, M. et al. (2023). Studying the effect of AI code generators on supporting novice learners in introductory programming. </span><em><span>Proceedings of CHI &#39;23</span></em><span>. </span><a href='https://scholar.google.com/scholar?q=&quot;Studying+the+effect+of+AI+code+generators+on+supporting+novice+learners+in+introductory+programming&quot;'><span>Enlace</span></a></p></li><li><p><span>Keith, N. y Frese, M. (2008). Effectiveness of error management training: A meta-analysis. </span><em><span>Journal of Applied Psychology, 93</span></em><span>(1), 59–69. </span><a href='https://doi.org/10.1037/0021-9010.93.1.59'><span>Enlace</span></a></p></li><li><p><span>Kestin, G., Miller, K., Klales, A., Milbourne, T. y Ponti, G. (2025). AI tutoring outperforms in-class active learning. </span><em><span>Scientific Reports, 15</span></em><span>, 17458. </span><a href='https://scholar.google.com/scholar?q=&quot;AI+tutoring+outperforms+in-class+active+learning&quot;'><span>Enlace</span></a></p></li><li><p><span>Kirschner, P. A., Sweller, J. y Clark, R. E. (2006). Why minimal guidance during instruction does not work. </span><em><span>Educational Psychologist, 41</span></em><span>(2), 75–86. </span><a href='https://doi.org/10.1207/s15326985ep4102_1'><span>Enlace</span></a></p></li><li><p><span>Kosmyna, N. et al. (2025). Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task. Preprint, arXiv:2506.08872. </span><a href='https://arxiv.org/abs/2506.08872'><span>Enlace</span></a></p></li><li><p><span>Lee, H.-P. et al. (2025). The impact of generative AI on critical thinking: Self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. </span><em><span>Proceedings of CHI &#39;25</span></em><span>. </span><a href='https://scholar.google.com/scholar?q=&quot;The+impact+of+generative+AI+on+critical+thinking%3A+Self-reported+reductions+in+cognitive+effort&quot;'><span>Enlace</span></a></p></li><li><p><span>Marton, F. y Säljö, R. (1976). On qualitative differences in learning: I. Outcome and process. </span><em><span>British Journal of Educational Psychology, 46</span></em><span>(1), 4–11. </span><a href='https://scholar.google.com/scholar?q=&quot;On+qualitative+differences+in+learning&quot;+Marton+Säljö'><span>Enlace</span></a></p></li><li><p><span>Metcalfe, J. (2017). Learning from errors. </span><em><span>Annual Review of Psychology, 68</span></em><span>, 465–489. </span><a href='https://doi.org/10.1146/annurev-psych-010416-044022'><span>Enlace</span></a></p></li><li><p><span>Noy, S. y Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. </span><em><span>Science, 381</span></em><span>(6654), 187–192. </span><a href='https://doi.org/10.1126/science.adh2586'><span>Enlace</span></a></p></li><li><p><span>Peters, U. y Chin-Yee, B. (2025). Generalization bias in large language model summarization of scientific research. </span><em><span>Royal Society Open Science, 12</span></em><span>(4), 241776. </span><a href='https://doi.org/10.1098/rsos.241776'><span>Enlace</span></a></p></li><li><p><span>Pickles, J. (Ed.). (1995). </span><em><span>Ground truth: The social implications of geographic information systems</span></em><span>. Guilford Press. </span><a href='https://scholar.google.com/scholar?q=&quot;Ground+truth%3A+The+social+implications+of+geographic+information+systems&quot;'><span>Enlace</span></a></p></li><li><p><span>Prather, J. et al. (2024). The widening gap: The benefits and harms of generative AI for novice programmers. </span><em><span>Proceedings of ICER &#39;24</span></em><span>. </span><a href='https://scholar.google.com/scholar?q=&quot;The+widening+gap%3A+The+benefits+and+harms+of+generative+AI+for+novice+programmers&quot;'><span>Enlace</span></a></p></li><li><p><span>Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024 (Reglamento de Inteligencia Artificial), art. 4. </span><a href='http://data.europa.eu/eli/reg/2024/1689/oj'><span>Enlace</span></a></p></li><li><p><span>Risko, E. F. y Gilbert, S. J. (2016). Cognitive offloading. </span><em><span>Trends in Cognitive Sciences, 20</span></em><span>(9), 676–688. </span><a href='https://doi.org/10.1016/j.tics.2016.07.002'><span>Enlace</span></a></p></li><li><p><span>Roediger, H. L. y Karpicke, J. D. (2006). Test-enhanced learning. </span><em><span>Psychological Science, 17</span></em><span>(3), 249–255. </span><a href='https://doi.org/10.1111/j.1467-9280.2006.01693.x'><span>Enlace</span></a></p></li><li><p><span>Sharma, M. et al. (2023). Towards understanding sycophancy in language models. Preprint, arXiv. </span><a href='https://scholar.google.com/scholar?q=&quot;Towards+understanding+sycophancy+in+language+models&quot;'><span>Enlace</span></a></p></li><li><p><span>Simonsmeier, B. A., Flaig, M., Deiglmayr, A., Schalk, L. y Schneider, M. (2022). Domain-specific prior knowledge and learning: A meta-analysis. </span><em><span>Educational Psychologist, 57</span></em><span>(1), 31–54. </span><a href='https://doi.org/10.1080/00461520.2021.1939700'><span>Enlace</span></a></p></li><li><p><span>Sinha, T. y Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. </span><em><span>Review of Educational Research, 91</span></em><span>(5), 761–798. </span><a href='https://doi.org/10.3102/00346543211019105'><span>Enlace</span></a></p></li><li><p><span>Slamecka, N. J. y Graf, P. (1978). The generation effect: Delineation of a phenomenon. </span><em><span>Journal of Experimental Psychology: Human Learning and Memory, 4</span></em><span>(6), 592–604. </span><a href='https://doi.org/10.1037/0278-7393.4.6.592'><span>Enlace</span></a></p></li><li><p><span>Soderstrom, N. C. y Bjork, R. A. (2015). Learning versus performance: An integrative review. </span><em><span>Perspectives on Psychological Science, 10</span></em><span>(2), 176–199. </span><a href='https://doi.org/10.1177/1745691615569000'><span>Enlace</span></a></p></li><li><p><span>UNESCO (2023). </span><em><span>Guidance for generative AI in education and research</span></em><span>. UNESCO. </span><a href='https://scholar.google.com/scholar?q=&quot;Guidance+for+generative+AI+in+education+and+research&quot;'><span>Enlace</span></a></p></li><li><p><span>van de Pol, J., Volman, M. y Beishuizen, J. (2010). Scaffolding in teacher–student interaction: A decade of research. </span><em><span>Educational Psychology Review, 22</span></em><span>(3), 271–296. </span><a href='https://doi.org/10.1007/s10648-010-9127-6'><span>Enlace</span></a></p></li><li><p><span>Vygotsky, L. S. (1978). </span><em><span>Mind in society: The development of higher psychological processes</span></em><span>. Harvard University Press. </span><a href='https://scholar.google.com/scholar?q=&quot;Mind+in+society%3A+The+development+of+higher+psychological+processes&quot;'><span>Enlace</span></a></p></li><li><p><span>Walters, W. H. y Wilder, E. I. (2023). Fabrication and errors in the bibliographic citations generated by ChatGPT. </span><em><span>Scientific Reports, 13</span></em><span>, 14045. </span><a href='https://doi.org/10.1038/s41598-023-41032-5'><span>Enlace</span></a></p></li><li><p><span>Wang, J. y Fan, W. (2025). The effect of ChatGPT on students&#39; learning performance, learning perception, and higher-order thinking: Insights from a meta-analysis. </span><em><span>Humanities and Social Sciences Communications, 12</span></em><span>, 621. </span><a href='https://scholar.google.com/scholar?q=&quot;The+effect+of+ChatGPT+on+students&#39;+learning+performance%2C+learning+perception%2C+and+higher-order+thinking&quot;'><span>Enlace</span></a></p></li><li><p><span>Weber-Wulff, D. et al. (2023). Testing of detection tools for AI-generated text. </span><em><span>International Journal for Educational Integrity, 19</span></em><span>, 26. </span><a href='https://doi.org/10.1007/s40979-023-00146-z'><span>Enlace</span></a></p></li><li><p><span>Wood, D., Bruner, J. S. y Ross, G. (1976). The role of tutoring in problem solving. </span><em><span>Journal of Child Psychology and Psychiatry, 17</span></em><span>(2), 89–100. </span><a href='https://doi.org/10.1111/j.1469-7610.1976.tb00381.x'><span>Enlace</span></a></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><hr /><p><a href='https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/archive/refs/tags/2026_2027.zip'><span>Aquí</span></a><span> puedes descargar un archivo .zip que contiene este texto en formato html y todo el material que incluye.</span></p><hr /><p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> <p>Esta licencia no aplica a enlaces a artículos, libros o imágenes no originales. Estos productos tienen su licencia correspondiente.</p><p>&nbsp;</p></div></div>
+</body>
+</html>

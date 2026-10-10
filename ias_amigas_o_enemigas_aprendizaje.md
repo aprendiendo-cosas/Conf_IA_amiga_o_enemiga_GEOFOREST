@@ -20,7 +20,7 @@ En esta sección introductoria describo cómo se ha generado tanto el contenido 
 
 Para generar lo que puedes leer a continuación se han dado los siguientes pasos:
 
-1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/1_hilo_argumental_inicial.md) tienes un documento con el hilo argumental inicial. 
+1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/1_hilo_argumental_inicial.md) tienes un documento con el hilo argumental inicial. 
 2. Después pasé el documento anterior a dos IAs para que identificaran incoherencias y para que aportaran bibliografía sobre las afirmaciones realizadas en el texto. El *prompt* que usé es este: 
 
 > Tengo que preparar una conferencia sobre el modo en el que las IAs pueden usarse para promover el aprendizaje profundo en estudiantes universitarios.
@@ -31,9 +31,9 @@ Para generar lo que puedes leer a continuación se han dado los siguientes pasos
 >
 > Quiero que la trabajemos juntos. En primer lugar quiero que evalues la coherencia de los mensajes que se plantean en el texto. DEvuélveme el mismo texto que te envío pero añade comentarios entre corchetes cuando identifiques evidencias sólidas que contradigan o maticen lo que yo he escrito. Añade también referencias bibliográficas entre paréntesis para las afirmaciones para las que encuentres evidencias científicas publicadas.
 
-​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
+​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
 
-3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/3_hilo_argumental_conciliado_IAs_fjbonet.md) se puede ver el hilo argumental "final".
+3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/versiones_previas/3_hilo_argumental_conciliado_IAs_fjbonet.md) se puede ver el hilo argumental "final".
 4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. [Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/tags/2026_2027/presentacion_IAs_geoforest.pptx) está disponible la presentación en formato Powerpoint. 
 5. El día de la charla puse el móvil a grabar y se generó un audio. Use Gemini para transcribirlo literalmente. Me da un poco de pudor compartir tanto el audio como la transcripción, así que no lo haré.
 6. Después pasé el audio transcrito a Claude y le pedí lo siguiente:
