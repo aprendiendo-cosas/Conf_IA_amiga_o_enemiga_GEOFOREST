@@ -5,8 +5,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **Duración**: 35'
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/portada.png)
-
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/portada.png)
 
 
 ---
@@ -21,7 +20,7 @@ En esta sección introductoria describo cómo se ha generado tanto el contenido 
 
 Para generar lo que puedes leer a continuación se han dado los siguientes pasos:
 
-1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/1_hilo_argumental_inicial.md) tienes un documento con el hilo argumental inicial. 
+1. En primer lugar elaboré un hilo argumental inicial basándome en mi experiencia, en lo que había leído sobre el tema y en [estas](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) buenas prácticas escribí hace unos meses. Si tienes curiosidad, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/1_hilo_argumental_inicial.md) tienes un documento con el hilo argumental inicial. 
 2. Después pasé el documento anterior a dos IAs para que identificaran incoherencias y para que aportaran bibliografía sobre las afirmaciones realizadas en el texto. El *prompt* que usé es este: 
 
 > Tengo que preparar una conferencia sobre el modo en el que las IAs pueden usarse para promover el aprendizaje profundo en estudiantes universitarios.
@@ -32,10 +31,10 @@ Para generar lo que puedes leer a continuación se han dado los siguientes pasos
 >
 > Quiero que la trabajemos juntos. En primer lugar quiero que evalues la coherencia de los mensajes que se plantean en el texto. DEvuélveme el mismo texto que te envío pero añade comentarios entre corchetes cuando identifiques evidencias sólidas que contradigan o maticen lo que yo he escrito. Añade también referencias bibliográficas entre paréntesis para las afirmaciones para las que encuentres evidencias científicas publicadas.
 
-​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
+​	En [este](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/2_hilo_argumental_comentado_por_IAs.md) documento se muestra la respuesta que me dieron Claude y Gemini al prompt anterior. 
 
-3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/3_hilo_argumental_conciliado_IAs_fjbonet.md) se puede ver el hilo argumental "final".
-4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. [Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/heads/main/presentacion_IAs_geoforest.pptx) está disponible la presentación en formato Powerpoint. 
+3. El siguiente paso implicó conciliar en otro documento los comentarios que aportaron las IAs con mi visión del asunto. No hubo cambio significativos en la estructura. [Aquí](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/3_hilo_argumental_conciliado_IAs_fjbonet.md) se puede ver el hilo argumental "final".
+4. Luego me puse a preparar la presentación. Ya tenía en mente una idea sobre cómo organizar la presentación. En esta fase use Nano Banana de Gemini para crear algunas figuras a modo de cliparts. La idea de los esquemas que aparecen en la presentación es toda mía. 0% de IA aquí. En el proceso de transformación del texto anterior a una presentación hubo cambios importantes. [Aquí](https://github.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/raw/refs/tags/2026_2027/presentacion_IAs_geoforest.pptx) está disponible la presentación en formato Powerpoint. 
 5. El día de la charla puse el móvil a grabar y se generó un audio. Use Gemini para transcribirlo literalmente. Me da un poco de pudor compartir tanto el audio como la transcripción, así que no lo haré.
 6. Después pasé el audio transcrito a Claude y le pedí lo siguiente:
 
@@ -60,7 +59,7 @@ El objetivo de esta charla no es ofrecer una respuesta definitiva, sino proponer
 
 
 
-![diapo1](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_1_portada.png)
+![diapo1](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_1_portada.png)
 
 
 
@@ -82,7 +81,7 @@ Las universidades, como instituciones, no han ofrecido hasta ahora una respuesta
 
 
 
-![diapo3](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_3_tsunami.png)
+![diapo3](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_3_tsunami.png)
 
 
 
@@ -108,7 +107,7 @@ El análisis de esos errores se presenta a continuación. Se parte de la premisa
 
 
 
-![diapo6](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_6_meme_correr_desierto.png)
+![diapo6](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_6_meme_correr_desierto.png)
 
 
 
@@ -128,7 +127,7 @@ El mecanismo invocado es la descarga cognitiva (*cognitive offloading*): al disp
 
 
 
-![diapo11](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_11_aprendiz_experto.png)
+![diapo11](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_11_aprendiz_experto.png)
 
 
 
@@ -144,7 +143,7 @@ Cuando la IA se orienta al proceso, los resultados mejoran. **[Comentario: respa
 
 
 
-![diapo12](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_12_productismo.png)
+![diapo12](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_12_productismo.png)
 
 
 
@@ -166,7 +165,7 @@ Entre los usos que tienden a dificultar el aprendizaje se encuentran los siguien
 
 
 
-![diapo13](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_13_multiuso.png)
+![diapo13](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_13_multiuso.png)
 
 
 
@@ -192,7 +191,7 @@ La IA generativa puede vulnerar estas tres condiciones. Salvo que se le indique 
 
 
 
-![diapo14](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/heads/main/imagenes/diapo_14_aprendizaje_profundo.png)
+![diapo14](https://raw.githubusercontent.com/aprendiendo-cosas/Conf_IA_amiga_o_enemiga_GEOFOREST/refs/tags/2026_2027/imagenes/diapo_14_aprendizaje_profundo.png)
 
 
 
